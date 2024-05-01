@@ -8,6 +8,15 @@ const myTheme = createTheme({
       customYellow: '#FED330',
       customBlue: '#081A73',
     },
+    primary: {
+      main: '#000729',
+    },
+    secondary: {
+      main: '#FED330',
+    },
+    tertiary: {
+      main: '#081A73',
+    },
   },
 });
 
