@@ -12,16 +12,16 @@ function Home() {
                     ALDESEG
                 </Typography>
                 <Typography sx={text.textH2}>
-                    Hola Hola
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 </Typography>
                 <Typography sx={text.textH3}>
-                    Agdshgsreuitgheroinrldksf jdfhdiughdfighdfgkdfg
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 </Typography>
                 <Typography sx={text.textH4}>
-                    hyuidsfbdsufs bsdfybdsufsd
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 </Typography>
                 <Typography sx={text.textH5}>
-                    Lore impsum hyuidsfbdsufs bsdfybdsufsd
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 </Typography>
                 <Button
                     variant="contained"
