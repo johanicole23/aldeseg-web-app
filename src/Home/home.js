@@ -2,26 +2,31 @@ import { Typography, Box, Button, ThemeProvider } from '@mui/material';
 import text from '../Styles/text';
 import button from '../Styles/button';
 import myTheme from '../Styles/myTheme';
+import NavBar from '../ExtraComponents/navBar';
+
 
 function Home() {
 
     return (
         <ThemeProvider theme={myTheme}>
+             <div><NavBar title="AppBar Component" /></div>
+           
             <Box alignItems='center' justifyContent={'center'} sx={{ mt: '5%' }}>
+                
                 <Typography sx={text.textH1}>
                     ALDESEG
                 </Typography>
                 <Typography sx={text.textH2}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Hola Hola
                 </Typography>
                 <Typography sx={text.textH3}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Agdshgsreuitgheroinrldksf jdfhdiughdfighdfgkdfg
                 </Typography>
                 <Typography sx={text.textH4}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    hyuidsfbdsufs bsdfybdsufsd
                 </Typography>
                 <Typography sx={text.textH5}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Lore impsum hyuidsfbdsufs bsdfybdsufsd
                 </Typography>
                 <Button
                     variant="contained"

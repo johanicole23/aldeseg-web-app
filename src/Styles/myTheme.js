@@ -7,6 +7,7 @@ const myTheme = createTheme({
       customDarkBlue: '#000729',
       customYellow: '#FED330',
       customBlue: '#081A73',
+      customLightBlue: '#2FC1EF',
     },
     primary: {
       main: '#000729',
