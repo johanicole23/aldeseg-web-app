@@ -122,7 +122,8 @@ function ResponsiveAppBar() {
                                 mr: 2,
                                 display: { xs: 'flex', md: 'none' },
                                 flexGrow: 1.5,                               
-                                letterSpacing: '.1rem',                             
+                                letterSpacing: '.1rem',
+                             
                                 textDecoration: 'none',
                             }}
                             component={Link} to="/" 

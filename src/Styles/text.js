@@ -30,8 +30,41 @@ const text = {
         color: myTheme.palette.common.customDarkBlue,
         fontFamily: 'Encode Sans Semi Condensed',
         fontWeight: 500,
-        fontSize: "20px",       
+        fontSize: "20px",
+        textDecoration: 'none',       
     },
+    titleNavBar: {
+        fontFamily: 'Encode Sans Semi Condensed',
+        fontWeight: 600,
+        display: { xs: 'none', md: 'flex' },
+        letterSpacing: '.1rem',
+        textDecoration: 'none',
+        fontSize: '38px',
+        color: 'white',
+        '@media screen and (max-width: 600px)': {
+            fontSize: '30px',            
+        },
+    },
+    subTitleNavBar: {
+        fontFamily: 'Encode Sans Semi Condensed',
+        fontWeight: 500,
+        color: 'white',
+        fontSize: "20px",
+        display: "inline-block",
+        position: "relative",
+        textDecoration: "none",
+        textTransform: 'none',  
+        
+        "&:hover:after": {
+            backgroundColor: myTheme.palette.common.customYellow,
+            color: myTheme.palette.common.customYellow,
+        },
+        "&:hover": {
+    
+            color: myTheme.palette.common.customYellow,
+        },
+    },
+
 
 
 }
