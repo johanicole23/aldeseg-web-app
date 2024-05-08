@@ -33,6 +33,28 @@ const text = {
         fontSize: "20px",
         textDecoration: 'none',       
     },
+    textFieldH6: {
+        color: myTheme.palette.common.customDarkBlue,
+        fontFamily: 'Encode Sans Semi Condensed',
+        fontWeight: 400,
+        fontSize: "18px",
+        textDecoration: 'none',  
+             
+    },
+    textFieldFocusedH6:{
+        '& .MuiOutlinedInput-root': {
+            '&.Mui-focused fieldset': {
+                borderColor: myTheme.palette.common.customBlue,
+            },
+        },
+    },
+    selectTextFieldFocusedH6: {
+        color: myTheme.palette.common.customBlue, // Cambia el color del texto del textfield select
+              
+              '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
+                borderColor: myTheme.palette.common.customBlue, // Cambia el color del borde del textfield select cuando está enfocado
+              },
+    },
     titleNavBar: {
         fontFamily: 'Encode Sans Semi Condensed',
         fontWeight: 600,
