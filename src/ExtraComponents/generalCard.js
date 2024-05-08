@@ -8,7 +8,7 @@ import generalCard from "../Styles/card";
 import text from "../Styles/text";
 import button from "../Styles/button";
 
-export default function GeneralCard({ imgUrl, name, description}) {
+export default function GeneralCard({ imgUrl, name, description, link}) {
     return (
         <Card sx={generalCard.card}>
             <CardActionArea sx={generalCard.CardActionArea} disabled>
@@ -28,8 +28,8 @@ export default function GeneralCard({ imgUrl, name, description}) {
                     </Typography>
                 </CardContent>
             </CardActionArea>
-            <CardActions sx={[generalCard.cardActions, {paddingBottom: "12%"}]}>
-                <Button variant="contained" sx={[button.buttonWhiteText, {width: "100%"}]}>
+            <CardActions sx={generalCard.cardActions}>
+                <Button variant="contained" href={link} sx={[button.buttonWhiteText, {width: "100%"}]}>
                     Ver más
                 </Button>
             </CardActions>
