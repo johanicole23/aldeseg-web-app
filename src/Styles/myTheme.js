@@ -8,6 +8,7 @@ const myTheme = createTheme({
       customYellow: '#FED330',
       customBlue: '#081A73',
       customLightBlue: '#2FC1EF',
+      customFooterBlue:'#F1F5FF',
     },
     primary: {
       main: '#000729',

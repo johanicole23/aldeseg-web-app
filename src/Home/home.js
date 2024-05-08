@@ -3,16 +3,17 @@ import text from '../Styles/text';
 import button from '../Styles/button';
 import myTheme from '../Styles/myTheme';
 import NavBar from '../ExtraComponents/navBar';
+import Footer from '../ExtraComponents/footer';
 
 
 function Home() {
 
     return (
         <ThemeProvider theme={myTheme}>
-             <div><NavBar title="AppBar Component" /></div>
-           
+            <div><NavBar title="AppBar Component" /></div>
+
             <Box alignItems='center' justifyContent={'center'} sx={{ mt: '5%' }}>
-                
+
                 <Typography sx={text.textH1}>
                     ALDESEG
                 </Typography>
@@ -34,7 +35,7 @@ function Home() {
                     to="/"
                     sx={button.buttonWhiteText}
                 >
-                   Más información
+                    Más información
                 </Button>
                 <br /><br />
                 <Button
@@ -43,7 +44,7 @@ function Home() {
                     to="/"
                     sx={button.buttonWhiteText}
                 >
-                   Más información
+                    Más información
                 </Button>
                 <br /><br />
                 <Button
@@ -52,7 +53,7 @@ function Home() {
                     to="/"
                     sx={button.buttonWhiteText}
                 >
-                   Más información
+                    Más información
                 </Button>
                 <br /><br />
                 <Button
@@ -61,7 +62,7 @@ function Home() {
                     to="/"
                     sx={button.buttonDarkBlueText}
                 >
-                   Cotiza con nosotros
+                    Cotiza con nosotros
                 </Button>
                 <br /><br />
                 <Button
@@ -70,7 +71,7 @@ function Home() {
                     to="/"
                     sx={button.buttonWhiteTextSmall}
                 >
-                   Experiencia
+                    Experiencia
                 </Button>
                 <br /><br />
                 <Button
@@ -79,7 +80,7 @@ function Home() {
                     to="/"
                     sx={button.buttonWhiteTextSmall}
                 >
-                   Más información
+                    Más información
                 </Button>
                 <br /><br />
                 <Button
@@ -88,7 +89,7 @@ function Home() {
                     to="/"
                     sx={button.buttonWhiteTextSmall}
                 >
-                   Más información
+                    Más información
                 </Button>
                 <br /><br />
                 <Button
@@ -97,7 +98,7 @@ function Home() {
                     to="/"
                     sx={button.buttonDarkBlueTextSmall}
                 >
-                   Cotiza con nosotros
+                    Cotiza con nosotros
                 </Button>
                 <Button
                     variant="outlined"
@@ -105,10 +106,11 @@ function Home() {
                     to="/"
                     sx={button.buttonDarkBlueTextSmall}
                 >
-                   Cotiza con nosotros
+                    Cotiza con nosotros
                 </Button>
 
             </Box>
+            <div><Footer title="Footer" /></div>
         </ThemeProvider>
 
     );

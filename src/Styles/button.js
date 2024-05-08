@@ -18,6 +18,14 @@ const button = {
         textTransform: 'none',  
         width: '18%'
     },
+    buttonDarkBlueTextFooter: {
+        color: myTheme.palette.common.customDarkBlue,
+        fontFamily: 'Encode Sans Semi Condensed',
+        fontWeight: 600,
+        fontSize: "20px",     
+        textTransform: 'none',  
+        width: '100%'
+    },
 
     buttonWhiteTextSmall: {
         color: 'white',

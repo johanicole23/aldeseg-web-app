@@ -1,27 +1,25 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
-
-import IconButton from '@mui/material/IconButton';
-
-import Menu from '@mui/material/Menu';
-import MenuIcon from '@mui/icons-material/Menu';
-import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
-import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
-import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
-import myTheme from '../Styles/myTheme';
-import text from '../Styles/text';
-import box from '../Styles/box';
-import logo from '../assets/images/logo.png';
 import {
     AppBar,
     Box,
     Toolbar,
     Typography,
     ThemeProvider,
+    Button,
+    MenuItem,
+    IconButton,
+    Menu,
+    Container,
+    useMediaQuery,
 } from '@mui/material';
+import MenuIcon from '@mui/icons-material/Menu';
+import myTheme from '../Styles/myTheme';
+import text from '../Styles/text';
+import box from '../Styles/box';
+import logo from '../assets/images/logo.png';
+
+
 
 const pages = [
     {
@@ -56,12 +54,13 @@ function ResponsiveAppBar() {
         setAnchorElUser(null);
     };
 
+    const isXs = useMediaQuery('(max-width:600px)');
     return (
         <ThemeProvider theme={myTheme}>
-            <AppBar color="primary" position="static">
+            <AppBar color="primary" position={isXs ? "fixed" : "static"}>
                 <Container maxWidth="xl">
                     <Toolbar disableGutters>
-                        <Box sx={{ display: { xs: 'none', md: 'flex' }, mr: '2%', ml: '3%', mt: '1%' }} >
+                        <Box sx={{ display: { xs: 'none', md: 'flex' }, mr: '2%', ml: '2%', mt: '1%' }} >
                             <img src={logo} className="App-logo" alt="logo" />
                         </Box>
                         <Typography component={Link} to="/" sx={text.titleNavBar} >
@@ -111,25 +110,26 @@ function ResponsiveAppBar() {
                                 ))}
                             </Menu>
                         </Box>
-                        
-                        <Box sx={{ display: { xs: 'flex', md: 'none'}, mr: '2%',  mt: '5%' }} >
+
+                        <Box sx={{ display: { xs: 'flex', md: 'none' }, mr: '2%', mt: '5%' }} >
                             <img src={logo} className="App-logo" alt="logo" />
                         </Box>
                         <Typography
-                           
-                            noWrap                         
-                            sx={{...text.titleNavBar,
+
+                            noWrap
+                            sx={{
+                                ...text.titleNavBar,
                                 mr: 2,
                                 display: { xs: 'flex', md: 'none' },
-                                flexGrow: 1.5,                               
-                                letterSpacing: '.1rem',                             
+                                flexGrow: 1.5,
+                                letterSpacing: '.1rem',
                                 textDecoration: 'none',
                             }}
-                            component={Link} to="/" 
+                            component={Link} to="/"
                         >
                             aldeseg
                         </Typography>
-                        <Box sx={{ marginLeft: '30%', flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+                        <Box sx={{ marginLeft: '45%', flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                             {pages.map((page) => (
                                 <Button
                                     key={page.title}
