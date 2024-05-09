@@ -20,10 +20,22 @@ const text = {
         fontWeight: 500,
         fontSize: "30px",       
     },
+    textH3Bold: {
+        color: myTheme.palette.common.customDarkBlue,
+        fontFamily: 'Encode Sans Semi Condensed',
+        fontWeight: 600,
+        fontSize: "30px",       
+    },
     textH4: {
         color: myTheme.palette.common.customDarkBlue,
         fontFamily: 'Encode Sans Semi Condensed',
         fontWeight: 500,
+        fontSize: "25px",       
+    },
+    textH4Bold: {
+        color: myTheme.palette.common.customDarkBlue,
+        fontFamily: 'Encode Sans Semi Condensed',
+        fontWeight: 600,
         fontSize: "25px",       
     },
     textH5: {

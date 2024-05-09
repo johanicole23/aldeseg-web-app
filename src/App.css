@@ -7,3 +7,24 @@
   pointer-events: none;
 }
 
+.App-aliances {
+  height: 10vmin;
+  pointer-events: none;
+  
+}
+@media screen and (min-width: 750px) and (max-width: 840px) {
+  .App-aliances {
+    height: 5vmin; /* Cambia la altura en pantallas con un ancho máximo de 768px */
+  }
+  .App-sweaden {
+    height: 1vmin;
+    
+  }
+  
+}
+.App-sweaden {
+  height: 14vmin;
+  pointer-events: none;
+}
+
+
