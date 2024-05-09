@@ -54,7 +54,7 @@ function ResponsiveAppBar() {
         setAnchorElUser(null);
     };
 
-    const isXs = useMediaQuery('(max-width:600px)');
+    const isXs = useMediaQuery('(max-width:840px)');
     return (
         <ThemeProvider theme={myTheme}>
             <AppBar color="primary" position={isXs ? "fixed" : "static"}>
@@ -111,7 +111,13 @@ function ResponsiveAppBar() {
                             </Menu>
                         </Box>
 
-                        <Box sx={{ display: { xs: 'flex', md: 'none' }, mr: '2%', mt: '5%' }} >
+                        <Box sx={{
+                            display: { xs: 'flex', md: 'none' }, mr: '2%',
+                            mt: '5%',
+                            '@media screen and (min-width: 700px) and (max-width: 840px)': {
+                                mt: '2%',
+                            },
+                        }} >
                             <img src={logo} className="App-logo" alt="logo" />
                         </Box>
                         <Typography
