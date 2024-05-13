@@ -39,8 +39,6 @@ import bmi from '../assets/images/Aliances/bmi.png';
 import unidos from '../assets/images/Aliances/unidos.png';
 import CustomSelect from './customSelect';
 
-
-
 const cities = [
     'Quito',
     'Guayaquil',
@@ -67,11 +65,6 @@ const assuranceType = [
     'Seguros de Responsabilidad Civil',
     'Seguro de fianzas',
 ];
-
-
-
-
-
 
 export default function Footer() {
     const [value, setValue] = React.useState(0);
@@ -190,9 +183,9 @@ export default function Footer() {
                                     </Box>
                                     <Box sx={{ display: 'flex', justifyContent: 'center', marginTop: '1%', alignItems: 'center' }}>
                                         <Button
-                                            variant="outlined"
+                                            variant="contained"
                                             color="primary"
-                                            sx={button.buttonDarkBlueTextFooter}
+                                            sx={button.buttonWhiteTextFooter}
                                             onClick={handleQuote}
                                         >
                                             Cotiza con nosotros
