@@ -16,10 +16,15 @@ function Home() {
             <NavBar title="AppBar" />
             <ImageSlider2 data={homeSlides} />
             <Box sx={box.boxFormatGeneralColumn} >
-                <Typography sx={text.textH2}>Conoce nuestros servicios</Typography>
-                <Typography sx={text.textH4}>Disponibles y a tu alcance</Typography>
+                <Typography sx={text.textH2}>Lo mejor de nosotros</Typography>
+                <Typography sx={text.textH4}>en todo momento</Typography>
                 <CircleComponent data={homeCircleIcons}/>
+            </Box>
 
+            <Box sx={box.boxFormatGeneralColumn} >
+                <Typography sx={text.textH1}>ALDESEG como la opción ideal para tus necesidades</Typography>
+                <Typography sx={text.textH4}>en todo momento</Typography>
+                <CircleComponent data={homeCircleIcons}/>
             </Box>
 
             <Box alignItems='center' justifyContent={'center'} sx={{ mt: '5%' }}>
