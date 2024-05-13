@@ -68,16 +68,16 @@ const homeSlides = [
 
 const homeCircleIcons = [
   {
-    id: 1, imgUrl: prueba, word1:'Protección y', word2:'Seguridad'
+    id: 1, imgUrl: prueba, word1:'Contacto', word2:'Directo'
   },
   {
-    id: 2, imgUrl: prueba, word1:'Protección y', word2:'Seguridad'
+    id: 2, imgUrl: prueba, word1:'Asistencia', word2:'Personalizada'
   },
   {
     id: 3, imgUrl: prueba, word1:'Protección y', word2:'Seguridad'
   },
   {
-    id: 4, imgUrl: prueba, word1:'Protección y', word2:'Seguridad'
+    id: 4, imgUrl: prueba, word1:'Disponibilidad', word2:'24 horas al día'
   },
  
 ];
