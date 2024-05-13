@@ -1,16 +1,26 @@
-import { Typography, Box, Button, ThemeProvider } from '@mui/material';
+import { Typography, Box, Button, ThemeProvider, Grid } from '@mui/material';
 import text from '../Styles/text';
 import button from '../Styles/button';
+import box from '../Styles/box';
 import myTheme from '../Styles/myTheme';
 import NavBar from '../ExtraComponents/navBar';
 import Footer from '../ExtraComponents/footer';
-
+import ImageSlider2 from '../ExtraComponents/imageSlider2';
+import CircleComponent from '../ExtraComponents/circleComponent';
+import { homeSlides, homeCircleIcons } from '../assets/data';
 
 function Home() {
 
     return (
         <ThemeProvider theme={myTheme}>
-            <div><NavBar title="AppBar Component" /></div>
+            <NavBar title="AppBar" />
+            <ImageSlider2 data={homeSlides} />
+            <Box sx={box.boxFormatGeneralColumn} >
+                <Typography sx={text.textH2}>Conoce nuestros servicios</Typography>
+                <Typography sx={text.textH4}>Disponibles y a tu alcance</Typography>
+                <CircleComponent data={homeCircleIcons}/>
+
+            </Box>
 
             <Box alignItems='center' justifyContent={'center'} sx={{ mt: '5%' }}>
 
@@ -110,7 +120,7 @@ function Home() {
                 </Button>
 
             </Box>
-            <div><Footer title="Footer" /></div>
+            <Footer title="Footer" />
         </ThemeProvider>
 
     );

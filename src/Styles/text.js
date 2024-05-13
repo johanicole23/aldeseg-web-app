@@ -6,13 +6,13 @@ const text = {
         color: myTheme.palette.common.customDarkBlue,
         fontFamily: 'Encode Sans Semi Condensed',
         fontWeight: 700,
-        fontSize: "50px",       
+        fontSize: "35px",       
     },
     textH2: {
         color: myTheme.palette.common.customDarkBlue,
         fontFamily: 'Encode Sans Semi Condensed',
         fontWeight: 600,
-        fontSize: "35px",       
+        fontSize: "2rem",       
     },
     textH3: {
         color: myTheme.palette.common.customDarkBlue,

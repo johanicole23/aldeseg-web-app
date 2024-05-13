@@ -32,10 +32,8 @@ const button = {
         fontWeight: 500,
         fontSize: "15px",     
         textTransform: 'none',  
-        width: '40%',
-        '@media screen and (max-width: 840px)': {
-            width: '100%',
-        },
+        width: '100%',
+        
     },
 
     buttonWhiteTextSmall: {
