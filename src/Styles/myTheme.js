@@ -9,6 +9,8 @@ const myTheme = createTheme({
       customBlue: '#081A73',
       customLightBlue: '#2FC1EF',
       customFooterBlue:'#F1F5FF',
+      customYellowTransparent: 'rgba(254, 211, 48, 0.7)',
+      customGrey: '#F2F2F2',
     },
     primary: {
       main: '#000729',

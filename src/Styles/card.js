@@ -104,13 +104,13 @@ const generalCard = {
         '@media screen and (min-width: 1150px) and (max-width: 1249px)': {
             margin: '0 5%',
         },
-        '@media screen and (min-width: 1030px) and (max-width: 1149px)': {
+        '@media screen and (min-width: 1050px) and (max-width: 1149px)': {
             margin: '0 0%',
         },
-        '@media screen and (min-width: 930px) and (max-width: 1029px)': {
+        '@media screen and (min-width: 950px) and (max-width: 1049px)': {
             margin: '0 -5%',
         },
-        '@media screen and (min-width: 901px) and (max-width: 929px)': {
+        '@media screen and (min-width: 901px) and (max-width: 949px)': {
             margin: '0 -10%',
         },
         '@media screen and (min-width: 780px) and (max-width: 900px)': {
