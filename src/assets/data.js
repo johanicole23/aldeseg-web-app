@@ -8,6 +8,25 @@ import homeSlide_2 from './images/home/slides/slide_2.jpeg';
 import homeSlide_3 from './images/home/slides/slide_3.jpeg';
 import homeSlide_4 from './images/home/slides/slide_4.jpeg';
 import homeSlide_5 from './images/home/slides/slide_5.jpeg';
+import homeCircleCellphone from './images/home/circleIcons/cellphone.png';
+import homeCircleContact from './images/home/circleIcons/directContact.png';
+import homeCircleProtection from './images/home/circleIcons/protection.png';
+import homeCircleLegal from './images/home/circleIcons/legal.png';
+import homeArticleFamilyDoctor from './images/home/article1/familyDoctor.jpg';
+import aig from './images/Aliances/aig.png';
+import ama from './images/Aliances/ama.png';
+import bestdoctors from './images/Aliances/bestdoctors.png';
+import bmi from './images/Aliances/bmi.png';
+import chubb from './images/Aliances/chubb.png';
+import ecuasuiza from './images/Aliances/ecuasuiza.png';
+import equinoccial from './images/Aliances/equinoccial.png';
+import hispana from './images/Aliances/hispana.png';
+import humana from './images/Aliances/humana.jpg';
+import latina from './images/Aliances/latina.png';
+import mapfre from './images/Aliances/mapfre.png';
+import sweaden from './images/Aliances/sweaden.png';
+import unidos from './images/Aliances/unidos.png';
+import confiamed from './images/Aliances/confiamed.png';
 import prueba from './images/prueba.png';
 
 const generalData = [
@@ -68,19 +87,86 @@ const homeSlides = [
 
 const homeCircleIcons = [
   {
-    id: 1, imgUrl: prueba, word1:'Contacto', word2:'Directo'
+    id: 1, imgUrl: homeCircleContact, word1: 'Contacto', word2: 'Directo'
   },
   {
-    id: 2, imgUrl: prueba, word1:'Asistencia', word2:'Personalizada'
+    id: 2, imgUrl: homeCircleCellphone, word1: 'Asistencia', word2: 'Telefónica'
   },
   {
-    id: 3, imgUrl: prueba, word1:'Protección y', word2:'Seguridad'
+    id: 3, imgUrl: homeCircleProtection, word1: 'Protección', word2: 'Garantizada'
   },
   {
-    id: 4, imgUrl: prueba, word1:'Disponibilidad', word2:'24 horas al día'
+    id: 4, imgUrl: homeCircleLegal, word1: 'Asistencia', word2: 'Legal'
   },
- 
+
+
+];
+
+const homeArticleComponent =
+{
+  data1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. ',
+  data2: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla.',
+  urlBackgroundImg: prueba,
+  urlImgArticle: homeArticleFamilyDoctor,
+  heightImgArticle: '230px',
+  heightImgArticle600: '260px',
+  heightImgArticle700: '190px',
+  heightBackgroundImg: '110px',
+  heightBackgroundImg600: '150px',
+  heightBackgroundImg700: '150px',
+
+};
+
+const homeAliancesComponent = [
+  {
+    id: 1, imgUrl: sweaden,
+  },
+  {
+    id: 2, imgUrl: equinoccial, 
+  },
+  {
+    id: 3, imgUrl: latina,
+  },
+  {
+    id: 4, imgUrl: chubb, 
+  },
+  {
+    id: 5, imgUrl: bmi,
+  },
+  {
+    id: 6, imgUrl: aig, 
+  },
+  {
+    id: 7, imgUrl: ama,
+  },
+  {
+    id: 8, imgUrl: bestdoctors, 
+  },
+
+  {
+    id: 9, imgUrl: ecuasuiza,
+  },
+  {
+    id: 10, imgUrl: hispana, 
+  },
+  {
+    id: 11, imgUrl: humana,
+  },
+  {
+    id: 12, imgUrl: mapfre, 
+  },
+  {
+    id: 13, imgUrl: unidos,
+  },
+  {
+    id: 14, imgUrl: confiamed, 
+  },
+
+
+
 ];
 
 
-export { generalData, generalCardsData, homeSlides, homeCircleIcons };
+
+export { generalData, generalCardsData, homeSlides, homeCircleIcons, homeArticleComponent, homeAliancesComponent };
+

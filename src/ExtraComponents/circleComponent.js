@@ -4,16 +4,24 @@ import box from '../Styles/box'
 const circleComponent = ({ data }) => {
     return (
         <Box sx={box.boxFormatGeneral}>
-            <Grid container spacing={8}  >
+            <Grid container spacing={3}  >
                 {data.map((item) => (
-                    <Grid item xs={12} sm={3} >
-                        <img src={item.imgUrl} alt={item.imgUrl} class="image-Radius" />
-                        <Box display={'flex'} justifyContent={'center'} >
-                            <Typography sx={text.textH5}>{item.word1}</Typography>
+                    <Grid item xs={3} sm={3} >
+                        <Box sx={{
+                            margin:'0 5%',
+                            '@media screen and (max-width: 600px)': {
+                                margin: '0 10% ',
+                            },
+                        }}>
+                            <img src={item.imgUrl} alt={item.imgUrl} class="image-Radius" />
+                            <Box display={'flex'} justifyContent={'center'} >
+                                <Typography sx={text.textH5CircleComponent}>{item.word1}</Typography>
+                            </Box>
+                            <Box display={'flex'} justifyContent={'center'}>
+                                <Typography sx={text.textH5CircleComponent}>{item.word2}</Typography>
+                            </Box>
                         </Box>
-                        <Box display={'flex'} justifyContent={'center'}>
-                            <Typography sx={text.textH5}>{item.word2}</Typography>
-                        </Box>
+
                     </Grid>
                 ))}
             </Grid>

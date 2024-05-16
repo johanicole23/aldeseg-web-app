@@ -19,7 +19,7 @@ const ImageSlider2 = ({ data }) => {
                     <img src={item.imgUrl} alt={item.imgUrl} width={"100%"} height={300} />
                     <Box sx={box.contentCarrusel}>
 
-                        <Box sx={{  }}>
+                        <Box >
                             <Typography variant="body2" sx={text.textH1}>{item.title}</Typography>
                         </Box>
                         <Box sx={{ marginTop: '1rem' }}>

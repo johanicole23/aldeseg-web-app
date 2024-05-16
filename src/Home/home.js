@@ -7,7 +7,9 @@ import NavBar from '../ExtraComponents/navBar';
 import Footer from '../ExtraComponents/footer';
 import ImageSlider2 from '../ExtraComponents/imageSlider2';
 import CircleComponent from '../ExtraComponents/circleComponent';
-import { homeSlides, homeCircleIcons } from '../assets/data';
+import ArticleComponent from '../ExtraComponents/articleComponent';
+import SwiperComponent from '../ExtraComponents/swiperComponent';
+import { homeSlides, homeCircleIcons, homeArticleComponent, homeAliancesComponent } from '../assets/data';
 
 function Home() {
 
@@ -18,113 +20,27 @@ function Home() {
             <Box sx={box.boxFormatGeneralColumn} >
                 <Typography sx={text.textH2}>Lo mejor de nosotros</Typography>
                 <Typography sx={text.textH4}>en todo momento</Typography>
-                <CircleComponent data={homeCircleIcons}/>
+                <CircleComponent data={homeCircleIcons} />
             </Box>
 
             <Box sx={box.boxFormatGeneralColumn} >
-                <Typography sx={text.textH1}>ALDESEG como la opción ideal para tus necesidades</Typography>
-                <Typography sx={text.textH4}>en todo momento</Typography>
-                <CircleComponent data={homeCircleIcons}/>
+                <Typography sx={{...text.textH1, margin:'0 5%'}}>ALDESEG como la opción ideal para tus necesidades</Typography>
+                <ArticleComponent data={homeArticleComponent} />
             </Box>
 
-            <Box alignItems='center' justifyContent={'center'} sx={{ mt: '5%' }}>
-
-                <Typography sx={text.textH1}>
-                    ALDESEG
-                </Typography>
-                <Typography sx={text.textH2}>
-                    Hola Hola
-                </Typography>
-                <Typography sx={text.textH3}>
-                    Agdshgsreuitgheroinrldksf jdfhdiughdfighdfgkdfg
-                </Typography>
-                <Typography sx={text.textH4}>
-                    hyuidsfbdsufs bsdfybdsufsd
-                </Typography>
-                <Typography sx={text.textH5}>
-                    Lore impsum hyuidsfbdsufs bsdfybdsufsd
-                </Typography>
-                <Button
-                    variant="contained"
-                    color="primary"
-                    to="/"
-                    sx={button.buttonWhiteText}
-                >
-                    Más información
-                </Button>
-                <br /><br />
-                <Button
-                    variant="contained"
-                    color="secondary"
-                    to="/"
-                    sx={button.buttonWhiteText}
-                >
-                    Más información
-                </Button>
-                <br /><br />
-                <Button
-                    variant="contained"
-                    color="tertiary"
-                    to="/"
-                    sx={button.buttonWhiteText}
-                >
-                    Más información
-                </Button>
-                <br /><br />
-                <Button
-                    variant="contained"
-                    color="secondary"
-                    to="/"
-                    sx={button.buttonDarkBlueText}
-                >
-                    Cotiza con nosotros
-                </Button>
-                <br /><br />
-                <Button
-                    variant="contained"
-                    color="primary"
-                    to="/"
-                    sx={button.buttonWhiteTextSmall}
-                >
-                    Experiencia
-                </Button>
-                <br /><br />
-                <Button
-                    variant="contained"
-                    color="secondary"
-                    to="/"
-                    sx={button.buttonWhiteTextSmall}
-                >
-                    Más información
-                </Button>
-                <br /><br />
-                <Button
-                    variant="contained"
-                    color="tertiary"
-                    to="/"
-                    sx={button.buttonWhiteTextSmall}
-                >
-                    Más información
-                </Button>
-                <br /><br />
-                <Button
-                    variant="contained"
-                    color="secondary"
-                    to="/"
-                    sx={button.buttonDarkBlueTextSmall}
-                >
-                    Cotiza con nosotros
-                </Button>
-                <Button
-                    variant="outlined"
-                    color="primary"
-                    to="/"
-                    sx={button.buttonDarkBlueTextSmall}
-                >
-                    Cotiza con nosotros
-                </Button>
-
+            <Box sx={box.boxFormatGeneralColumn} >
+                <Typography sx={{...text.textH2, margin:'0 5%'}}>Alianzas con las Mejores Aseguradoras</Typography>
+                <Typography sx={{...text.textH4, margin:'0 5%'}}>nuestros socios en proteger lo que más importa</Typography>
+                <SwiperComponent data={homeAliancesComponent} />
             </Box>
+
+            <Box sx={box.boxFormatGeneralColumn} >
+                <Typography sx={{...text.textH1, margin:'0 5%'}}>ALDESEG como la opción ideal para tus necesidades</Typography>
+                <ArticleComponent data={homeArticleComponent} />
+            </Box>
+
+
+            
             <Footer title="Footer" />
         </ThemeProvider>
 
