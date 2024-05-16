@@ -12,6 +12,7 @@
   pointer-events: none;
   
 }
+
 @media screen and (min-width: 750px) and (max-width: 840px) {
   .App-aliances {
     height: 5vmin; /* Cambia la altura en pantallas con un ancho máximo de 768px */
@@ -39,11 +40,21 @@
 
 @media screen and (max-width: 600px) {
   .image-Radius {
-    height: 12rem;
-    width: 12rem;
+    height: 4rem;
+    width: 4rem;    
+  }
+  .image-aliance-swiper {
+    width:100px;
+    height:60px;
   }
   
 }
+
+.image-aliance-swiper {
+  width:300px;
+  height:180px;
+}
+
 
 
 

@@ -39,6 +39,13 @@ const box = {
         },
 
     },
+    contentArticleComponent: {
+        position: 'absolute', margin: '0 5% 3rem 5%',
+        '@media screen and (max-width: 600px)': {
+            top: '25px', margin: '120px 6% 0 6%'
+        },
+
+    },
 
     boxFormatGeneralColumn: {
         display: 'flex',
@@ -47,7 +54,7 @@ const box = {
         flexDirection: 'column',
         margin: '5rem 10% ',
         '@media screen and (max-width: 600px)': {
-            margin: '5rem 2% ',
+            margin: '5rem 4% ',
         },
     },
     boxFormatGeneral: {
@@ -56,7 +63,17 @@ const box = {
         alignItems: 'center',
         margin: '3rem 0 ',
         '@media screen and (max-width: 600px)': {
-            margin: '5rem 30% ',
+            margin: '5rem 2% 2rem 2% ',
+        },
+      
+    },
+    boxFormatArticleComponent: {
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        margin: '3rem 0 ',
+        '@media screen and (max-width: 600px)': {
+            margin: '1rem 5% ',
         },
       
     },

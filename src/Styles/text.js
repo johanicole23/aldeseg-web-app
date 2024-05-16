@@ -43,7 +43,18 @@ const text = {
         fontFamily: 'Encode Sans Semi Condensed',
         fontWeight: 500,
         fontSize: "20px",
-        textDecoration: 'none',       
+        textDecoration: 'none',     
+       
+    },
+    textH5CircleComponent: {
+        color: myTheme.palette.common.customDarkBlue,
+        fontFamily: 'Encode Sans Semi Condensed',
+        fontWeight: 500,
+        fontSize: "20px",
+        textDecoration: 'none',     
+        '@media screen and (max-width: 600px)': {
+            fontSize: "14px",
+        },  
     },
     textFieldH6: {
         color: myTheme.palette.common.customDarkBlue,
@@ -83,7 +94,7 @@ const text = {
         fontFamily: 'Encode Sans Semi Condensed',
         fontWeight: 500,
         color: 'white',
-        fontSize: "20px",
+        fontSize: "15px",
         display: "inline-block",
         position: "relative",
         textDecoration: "none",
