@@ -8,7 +8,7 @@ const button = {
         fontWeight: 500,
         fontSize: "20px",     
         textTransform: 'none',  
-        width: '15%'
+        width: '40%'
     },
     buttonDarkBlueText: {
         color: myTheme.palette.common.customDarkBlue,

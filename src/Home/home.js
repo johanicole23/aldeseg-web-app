@@ -1,6 +1,5 @@
-import { Typography, Box, Button, ThemeProvider, Grid } from '@mui/material';
+import { Typography, Box,  ThemeProvider } from '@mui/material';
 import text from '../Styles/text';
-import button from '../Styles/button';
 import box from '../Styles/box';
 import myTheme from '../Styles/myTheme';
 import NavBar from '../ExtraComponents/navBar';
@@ -38,8 +37,6 @@ function Home() {
                 <Typography sx={{...text.textH1, margin:'0 5%'}}>ALDESEG como la opción ideal para tus necesidades</Typography>
                 <ArticleComponent data={homeArticleComponent} />
             </Box>
-
-
             
             <Footer title="Footer" />
         </ThemeProvider>

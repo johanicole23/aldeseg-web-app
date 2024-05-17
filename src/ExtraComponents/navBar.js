@@ -16,7 +16,6 @@ import {
 import MenuIcon from '@mui/icons-material/Menu';
 import myTheme from '../Styles/myTheme';
 import text from '../Styles/text';
-import box from '../Styles/box';
 import logo from '../assets/images/logo.png';
 
 
@@ -37,22 +36,17 @@ const pages = [
 
 function ResponsiveAppBar() {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
-    const [anchorElUser, setAnchorElUser] = React.useState(null);
 
     const handleOpenNavMenu = (event) => {
         setAnchorElNav(event.currentTarget);
     };
-    const handleOpenUserMenu = (event) => {
-        setAnchorElUser(event.currentTarget);
-    };
+
 
     const handleCloseNavMenu = () => {
         setAnchorElNav(null);
     };
 
-    const handleCloseUserMenu = () => {
-        setAnchorElUser(null);
-    };
+   
 
     const isXs = useMediaQuery('(max-width:840px)');
     return (
@@ -60,7 +54,7 @@ function ResponsiveAppBar() {
             <AppBar color="primary" position={isXs ? "fixed" : "static"}>
                 <Container maxWidth="xl">
                     <Toolbar disableGutters>
-                        <Box sx={{ display: { xs: 'none', md: 'flex' }, mr: '2%', ml: '2%', mt: '1%' }} >
+                        <Box sx={{ display: { xs: 'none', md: 'flex' }, margin:'0 30px' }} >
                             <img src={logo} className="App-logo" alt="logo" />
                         </Box>
                         <Typography component={Link} to="/" sx={text.titleNavBar} >
@@ -112,11 +106,8 @@ function ResponsiveAppBar() {
                         </Box>
 
                         <Box sx={{
-                            display: { xs: 'flex', md: 'none' }, mr: '2%',
-                            mt: '5%',
-                            '@media screen and (min-width: 700px) and (max-width: 840px)': {
-                                mt: '2%',
-                            },
+                            display: { xs: 'flex', md: 'none' }, mr: '10px',
+                           
                         }} >
                             <img src={logo} className="App-logo" alt="logo" />
                         </Box>

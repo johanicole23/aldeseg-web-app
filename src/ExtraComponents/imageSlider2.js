@@ -1,5 +1,5 @@
 import Carousel from 'react-material-ui-carousel';
-import { Box, Typography, Button } from '@mui/material';
+import { Box, Typography} from '@mui/material';
 import text from '../Styles/text';
 import box from '../Styles/box'
 const ImageSlider2 = ({ data }) => {
@@ -20,10 +20,10 @@ const ImageSlider2 = ({ data }) => {
                     <Box sx={box.contentCarrusel}>
 
                         <Box >
-                            <Typography variant="body2" sx={text.textH1}>{item.title}</Typography>
+                            <Typography variant="body2" sx={text.textTitleSlider}>{item.title}</Typography>
                         </Box>
                         <Box sx={{ marginTop: '1rem' }}>
-                            <Typography variant="body2" sx={text.textH3}>{item.subtitle}</Typography>
+                            <Typography variant="body2" sx={text.textSubtitleSlider}>{item.subtitle}</Typography>
                         </Box>
 
                     </Box>

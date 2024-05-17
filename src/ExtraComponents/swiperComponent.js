@@ -1,7 +1,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
-import SwiperCore, { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
+
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -11,10 +10,8 @@ import 'swiper/css/scrollbar';
 
 
 const SwiperComponent = ({ data }) => {
-    const theme = useTheme();
     const isSmallScreen = useMediaQuery('(max-width: 599px)');
     const isMediumScreen = useMediaQuery('(min-width: 600px) and (max-width: 900px)');
-    const isLargeScreen = useMediaQuery('(min-width: 850px)');
     const slidesPerView = isSmallScreen ? 1.5 : (isMediumScreen ? 2 : 4);
     return (
         <Swiper
