@@ -13,6 +13,11 @@ import homeCircleContact from './images/home/circleIcons/directContact.png';
 import homeCircleProtection from './images/home/circleIcons/protection.png';
 import homeCircleLegal from './images/home/circleIcons/legal.png';
 import homeArticleFamilyDoctor from './images/home/article1/familyDoctor.jpg';
+import aboutUsVission from './images/aboutUs/vission.png';
+import aboutUsBackgroundVission from './images/aboutUs/backgroundVission.png';
+import aboutUsBackgroundOneSlide from './images/aboutUs/backgroundOneSlide.jpg';
+import aboutUsRocio from "./images/aboutUs/people/RocioDLaTorre.png";
+import aboutUsAndrea from "./images/aboutUs/people/AndreaCastillo.png";
 import aig from './images/Aliances/aig.png';
 import ama from './images/Aliances/ama.png';
 import bestdoctors from './images/Aliances/bestdoctors.png';
@@ -21,7 +26,7 @@ import chubb from './images/Aliances/chubb.png';
 import ecuasuiza from './images/Aliances/ecuasuiza.png';
 import equinoccial from './images/Aliances/equinoccial.png';
 import hispana from './images/Aliances/hispana.png';
-import humana from './images/Aliances/humana.jpg';
+import humana from './images/Aliances/humana.png';
 import latina from './images/Aliances/latina.png';
 import mapfre from './images/Aliances/mapfre.png';
 import sweaden from './images/Aliances/sweaden.png';
@@ -69,7 +74,7 @@ const generalCardsData = [
 ];
 const homeSlides = [
   {
-    id: 1, imgUrl: homeSlide_1, title: 'Asesores y Productores de Seguros', subtitle: 'Estamos comprometidos contigo, en cada etapa de tu vida.'
+    id: 1, imgUrl: homeSlide_1, title: 'Asesores y Productores', subtitle: 'Nuestros seguros te apoyan y protegen en cada etapa de tu vida.'
   },
   {
     id: 2, imgUrl: homeSlide_2, title: 'ALDESEG es una empresa ', subtitle: 'Con una trayectoria de más de 15 años y una amplia cartera de clientes.'
@@ -78,7 +83,7 @@ const homeSlides = [
     id: 3, imgUrl: homeSlide_3, title: 'Amplia gama de servicios', subtitle: 'Satisfacemos las necesidades de protección y seguridad de nuestros clientes.'
   },
   {
-    id: 4, imgUrl: homeSlide_4, title: 'Servicio de Asistencia Legal', subtitle: 'Apoyo y protección en la resolución de conflictos relacionados con pólizas de seguros.'
+    id: 4, imgUrl: homeSlide_4, title: 'Asistencia Legal', subtitle: 'Apoyo y protección en la resolución de conflictos relacionados con pólizas de seguros.'
   },
   {
     id: 5, imgUrl: homeSlide_5, title: 'Servicio de Finanzas', subtitle: 'Soluciones para garantizar el cumplimiento de obligaciones contractuales y legales.'
@@ -122,51 +127,125 @@ const homeAliancesComponent = [
     id: 1, imgUrl: sweaden,
   },
   {
-    id: 2, imgUrl: equinoccial, 
+    id: 2, imgUrl: equinoccial,
   },
   {
     id: 3, imgUrl: latina,
   },
   {
-    id: 4, imgUrl: chubb, 
+    id: 4, imgUrl: chubb,
   },
   {
     id: 5, imgUrl: bmi,
   },
   {
-    id: 6, imgUrl: aig, 
+    id: 6, imgUrl: aig,
   },
   {
     id: 7, imgUrl: ama,
   },
   {
-    id: 8, imgUrl: bestdoctors, 
+    id: 8, imgUrl: bestdoctors,
   },
 
   {
     id: 9, imgUrl: ecuasuiza,
   },
   {
-    id: 10, imgUrl: hispana, 
+    id: 10, imgUrl: hispana,
   },
   {
     id: 11, imgUrl: humana,
   },
   {
-    id: 12, imgUrl: mapfre, 
+    id: 12, imgUrl: mapfre,
   },
   {
     id: 13, imgUrl: unidos,
   },
   {
-    id: 14, imgUrl: confiamed, 
+    id: 14, imgUrl: confiamed,
   },
 
+];
+
+const footerAliances = [
+  {
+    id: 1, imgUrl: sweaden,
+  },
+  {
+    id: 2, imgUrl: equinoccial,
+  },
+  {
+    id: 3, imgUrl: latina,
+  },
+  {
+    id: 4, imgUrl: ecuasuiza,
+  },
+  {
+    id: 5, imgUrl: bmi,
+  },
+  {
+    id: 6, imgUrl: aig,
+  },
+  {
+    id: 7, imgUrl: ama,
+  },
+  {
+    id: 8, imgUrl: bestdoctors,
+  },
+  {
+    id: 9, imgUrl: humana,
+  },
+  {
+    id: 10, imgUrl: unidos,
+  },
+  {
+    id: 11, imgUrl: confiamed,
+  },
+  {
+    id: 12, imgUrl: mapfre,
+  },
 
 
 ];
 
+const aboutUsSlide =
+{
+  imgUrl: aboutUsBackgroundOneSlide,
+  title: 'Asesores y Productores de Seguros',
+  subtitle: 'Somos un puente sólido y confiable entre nuestros clientes y las mejores compañías de seguros del mercado, ofrecemos soluciones personalizadas que se adaptan a tus necesidades. ',
 
+};
+const aboutUsMisionVision =
+{
+  data1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. ',
+  data2: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla.',
+  urlBackgroundImg: aboutUsBackgroundVission,
+  urlImgArticle: aboutUsVission,
+  heightImgArticle: '230px',
+  heightImgArticle600: '260px',
+  heightImgArticle700: '190px',
+  heightBackgroundImg: '110px',
+  heightBackgroundImg600: '150px',
+  heightBackgroundImg700: '150px',
 
-export { generalData, generalCardsData, homeSlides, homeCircleIcons, homeArticleComponent, homeAliancesComponent };
+};
+const aboutUsWhoComponent = [
+  {
+    id: 1, imgUrl: aboutUsRocio, name: "Rocío D' LaTorre", phrase: 'Nuestra prioridad es brindar una cobertura que no solo cumpla con las expectativas de nuestros clientes, sino que las supere, proporcionando servicios excepcionales.'
+  },
+  {
+    id: 2, imgUrl: aboutUsAndrea, name: "Andrea Castillo", phrase: 'Nuestra prioridad es brindar una cobertura que no solo cumpla con las expectativas de nuestros clientes, sino que las supere, proporcionando servicios excepcionales.'
+  },
+  {
+    id: 3, imgUrl: aboutUsRocio, name: "Rocío D' LaTorre", phrase: 'Nuestra prioridad es brindar una cobertura que no solo cumpla con las expectativas de nuestros clientes, sino que las supere, proporcionando servicios excepcionales.'
+  },
+];
+
+export {
+  generalData, generalCardsData, homeSlides, homeCircleIcons, homeArticleComponent, homeAliancesComponent,
+  footerAliances,
+  aboutUsMisionVision, aboutUsSlide, aboutUsWhoComponent
+};
 

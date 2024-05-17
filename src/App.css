@@ -3,23 +3,18 @@
 }
 
 .App-logo {
-  height: 6vmin;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
   pointer-events: none;
 }
 
-.App-aliances {
-  height: 10vmin;
-  pointer-events: none;
-  
-}
 
-@media screen and (min-width: 750px) and (max-width: 840px) {
-  .App-aliances {
-    height: 5vmin; /* Cambia la altura en pantallas con un ancho máximo de 768px */
-  }
-  .App-sweaden {
-    height: 1vmin;
-    
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  .App-logo {
+    height: 50px;
+    width: 50px;   
   }
   
 }
@@ -38,7 +33,7 @@
   margin-bottom: 2rem;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 599px) {
   .image-Radius {
     height: 4rem;
     width: 4rem;    
@@ -47,12 +42,24 @@
     width:100px;
     height:60px;
   }
-  
+  .image-aliance-footer {
+    width:90px;
+    height:54px;
+  }
+  .App-logo {
+    height: 40px;
+    width: 40px;   
+  }
 }
 
 .image-aliance-swiper {
   width:300px;
   height:180px;
+}
+
+.image-aliance-footer {
+  width:150px;
+  height:90px;
 }
 
 

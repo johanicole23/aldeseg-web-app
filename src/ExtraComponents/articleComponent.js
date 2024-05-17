@@ -22,10 +22,10 @@ const articleComponent = ({ data }) => {
                         justifyContent: 'center',
                         alignItems: 'center',
                         borderRadius: '10px',
-                        '@media screen and (max-width: 600px)': {
+                        '@media screen and (max-width: 599px)': {
                             height: data.heightBackgroundImg600,
                         },
-                        '@media screen and (min-width: 700px) and (max-width: 840px)': {
+                        '@media screen and (min-width: 600px) and (max-width: 900px)': {
                             height: data.heightBackgroundImg700,
                         },
                     }}>
