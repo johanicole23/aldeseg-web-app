@@ -48,6 +48,30 @@ const text = {
         textDecoration: 'none',
 
     },
+    textH6: {
+        color: myTheme.palette.common.customDarkBlue,
+        fontFamily: 'Encode Sans Semi Condensed',
+        fontWeight: 500,
+        fontSize: "18px",
+        textDecoration: 'none',
+
+    },
+    textH6White: {
+        color: 'white',	
+        fontFamily: 'Encode Sans Semi Condensed',
+        fontWeight: 500,
+        fontSize: "15px",
+        textDecoration: 'none',
+
+    },
+    textH7: {
+        color: myTheme.palette.common.customDarkBlue,
+        fontFamily: 'Encode Sans Semi Condensed',
+        fontWeight: 500,
+        fontSize: "15px",
+        textDecoration: 'none',
+
+    },
     textH5CircleComponent: {
         color: myTheme.palette.common.customDarkBlue,
         fontFamily: 'Encode Sans Semi Condensed',

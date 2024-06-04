@@ -14,10 +14,11 @@
 @media screen and (min-width: 600px) and (max-width: 900px) {
   .App-logo {
     height: 50px;
-    width: 50px;   
+    width: 50px;
   }
-  
+
 }
+
 .App-sweaden {
   height: 14vmin;
   pointer-events: none;
@@ -33,36 +34,40 @@
   margin-bottom: 2rem;
 }
 
+.image-who-Component {
+  width: '200px';
+  height: '200px';
+  border-radius: '50%';
+}
+
 @media screen and (max-width: 599px) {
   .image-Radius {
     height: 4rem;
-    width: 4rem;    
+    width: 4rem;
   }
+
   .image-aliance-swiper {
-    width:100px;
-    height:60px;
+    width: 100px;
+    height: 60px;
   }
+
   .image-aliance-footer {
-    width:90px;
-    height:54px;
+    width: 90px;
+    height: 54px;
   }
+
   .App-logo {
     height: 40px;
-    width: 40px;   
+    width: 40px;
   }
 }
 
 .image-aliance-swiper {
-  width:300px;
-  height:180px;
+  width: 300px;
+  height: 180px;
 }
 
 .image-aliance-footer {
-  width:150px;
-  height:90px;
+  width: 150px;
+  height: 90px;
 }
-
-
-
-
-
