@@ -78,6 +78,28 @@ const box = {
       
     },
 
+    paperBoxWhoComponent: {
+        backgroundColor: 'whiteSmoke',
+        width: '100%',
+        height: '200px',
+        borderRadius: '20px',
+        padding: '2rem 4% 0 4%',
+        marginBottom: '4rem',
+        '@media screen and (max-width: 599px)': {
+            height: '410px',
+        },
+        '@media screen and (min-width: 600px) and (max-width: 900px)': {
+            height: '270px',
+        },
+    },
+
+    boxContentWhoComponent: {
+        alignItems: 'space-around',
+        justifyContent: 'flex-start',
+        flexDirection: 'column',
+        margin: '0 8%',
+    },
+
    
 
 

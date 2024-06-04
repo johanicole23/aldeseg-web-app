@@ -18,6 +18,7 @@ import aboutUsBackgroundVission from './images/aboutUs/backgroundVission.png';
 import aboutUsBackgroundOneSlide from './images/aboutUs/backgroundOneSlide.jpg';
 import aboutUsRocio from "./images/aboutUs/people/RocioDLaTorre.png";
 import aboutUsAndrea from "./images/aboutUs/people/AndreaCastillo.png";
+import aboutUs36Number from "./images/aboutUs/36number.png";
 import aig from './images/Aliances/aig.png';
 import ama from './images/Aliances/ama.png';
 import bestdoctors from './images/Aliances/bestdoctors.png';
@@ -233,13 +234,32 @@ const aboutUsMisionVision =
 };
 const aboutUsWhoComponent = [
   {
-    id: 1, imgUrl: aboutUsRocio, name: "Rocío D' LaTorre", phrase: 'Nuestra prioridad es brindar una cobertura que no solo cumpla con las expectativas de nuestros clientes, sino que las supere, proporcionando servicios excepcionales.'
+    id: 1, imgUrl: aboutUsRocio, name: "Rocío D' LaTorre", phrase: '"Nuestra prioridad es brindar una cobertura que no solo cumpla con las expectativas de nuestros clientes, sino que las supere, proporcionando servicios excepcionales."',
+    numberUrl: aboutUs36Number,
+    list1: 'Gestión eficiente: 15 años en el análisis de riesgos y seguros', 
+    list2: 'Líder en cumplimiento: 10+ años en aseguradoras y brokers.',
+    list3: '15 años en el desarrollo de estrategias de cobertura en seguros.',
+    list4: '10+ años protegiendo activos en aseguradoras y brokers.',
+    list5: 'Gestión de reclamos: décadas de experiencia en aseguradoras.',
+
   },
   {
-    id: 2, imgUrl: aboutUsAndrea, name: "Andrea Castillo", phrase: 'Nuestra prioridad es brindar una cobertura que no solo cumpla con las expectativas de nuestros clientes, sino que las supere, proporcionando servicios excepcionales.'
+    id: 2, imgUrl: aboutUsAndrea, name: "Andrea Castillo", phrase: '"Nuestra prioridad es brindar una cobertura que no solo cumpla con las expectativas de nuestros clientes, sino que las supere, proporcionando servicios excepcionales."',
+    numberUrl: aboutUs36Number,
+    list1: 'Gestión eficiente: 15 años en el análisis de riesgos y seguros', 
+    list2: 'Líder en cumplimiento: 10+ años en aseguradoras y brokers.',
+    list3: '15 años en el desarrollo de estrategias de cobertura en seguros.',
+    list4: '10+ años protegiendo activos en aseguradoras y brokers.',
+    list5: 'Gestión de reclamos: décadas de experiencia en aseguradoras.',
   },
   {
-    id: 3, imgUrl: aboutUsRocio, name: "Rocío D' LaTorre", phrase: 'Nuestra prioridad es brindar una cobertura que no solo cumpla con las expectativas de nuestros clientes, sino que las supere, proporcionando servicios excepcionales.'
+    id: 3, imgUrl: aboutUsRocio, name: "Miriam D' LaTorre", phrase: '"Nuestra prioridad es brindar una cobertura que no solo cumpla con las expectativas de nuestros clientes, sino que las supere, proporcionando servicios excepcionales."',
+    numberUrl: aboutUs36Number, 
+    list1: 'Gestión eficiente: 15 años en el análisis de riesgos y seguros', 
+    list2: 'Líder en cumplimiento: 10+ años en aseguradoras y brokers.',
+    list3: '15 años en el desarrollo de estrategias de cobertura en seguros.',
+    list4: '10+ años protegiendo activos en aseguradoras y brokers.',
+    list5: 'Gestión de reclamos: décadas de experiencia en aseguradoras.',
   },
 ];
 
