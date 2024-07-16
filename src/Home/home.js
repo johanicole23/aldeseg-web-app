@@ -8,6 +8,7 @@ import ImageSlider2 from '../ExtraComponents/imageSlider2';
 import CircleComponent from '../ExtraComponents/circleComponent';
 import ArticleComponent from '../ExtraComponents/articleComponent';
 import SwiperComponent from '../ExtraComponents/swiperComponent';
+import WhatsAppButton from '../ExtraComponents/whatsappButton';
 import { homeSlides, homeCircleIcons, homeArticleComponent, homeAliancesComponent } from '../assets/data';
 
 function Home() {
@@ -15,6 +16,7 @@ function Home() {
     return (
         <ThemeProvider theme={myTheme}>
             <NavBar title="AppBar" />
+            <WhatsAppButton />
             <ImageSlider2 data={homeSlides} />
             <Box sx={box.boxFormatGeneralColumn} >
                 <Typography sx={text.textH2}>Lo mejor de nosotros</Typography>
