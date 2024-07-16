@@ -263,9 +263,11 @@ const aboutUsWhoComponent = [
   },
 ];
 
+const phoneNumber = '593983879340';
+
 export {
   generalData, generalCardsData, homeSlides, homeCircleIcons, homeArticleComponent, homeAliancesComponent,
   footerAliances,
-  aboutUsMisionVision, aboutUsSlide, aboutUsWhoComponent
+  aboutUsMisionVision, aboutUsSlide, aboutUsWhoComponent, phoneNumber,
 };
 
