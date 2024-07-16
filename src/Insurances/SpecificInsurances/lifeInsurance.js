@@ -46,10 +46,7 @@ function lifeInsurance() {
                     }
                 }}>
                     <Typography sx={[text.textH1, {
-                        '@media screen and (max-width: 600px)': {
-                            fontSize: '2rem'
-                        },
-                        '@media screen and (min-width: 700px) and (max-width: 840px)': {
+                        '@media screen  and (max-width: 840px)': {
                             fontSize: '2rem'
                         }
                     }]}>
@@ -57,10 +54,7 @@ function lifeInsurance() {
                     </Typography>
                     <br></br>
                     <Typography sx={[text.textH5, {
-                        '@media screen and (max-width: 600px)': {
-                            fontSize: '1rem'
-                        },
-                        '@media screen and (min-width: 700px) and (max-width: 840px)': {
+                        '@media screen and (max-width: 840px)': {
                             fontSize: '1rem'
                         }
                     }]}>
@@ -77,14 +71,13 @@ function lifeInsurance() {
                 {' > '}
                 <StyledBreadcrumb component="a" href="#" label="Seguros de Vida" />
             </Box>
-            <Box alignItems='center' justifyContent={'center'} sx={{ width: '90%', marginLeft: '5%' }}>
+            
+            <Box sx={box.boxFormatGeneralColumn} >
                 <Typography sx={[text.textH1, { textAlign: 'center' }]}>
                     Seguros de Vida
                 </Typography>
-                <Box sx={box.boxFormatGeneralColumn} >
-                    <CircleComponent data={homeCircleIcons} />
-                </Box>
-                <Divider/>
+                <CircleComponent data={homeCircleIcons} />
+                <Divider />
             </Box>
 
             <Typography sx={[text.textH2, { mt: '3%', ml: '5%', mr: '5%' }]}>
