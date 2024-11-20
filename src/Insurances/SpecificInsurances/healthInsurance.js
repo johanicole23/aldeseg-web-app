@@ -13,7 +13,7 @@ import { homeCircleIcons } from '../../assets/data';
 import WhatsAppButton from '../../ExtraComponents/whatsappButton';
 import CircleComponent from '../../ExtraComponents/circleComponent';
 
-function lifeInsurance() {
+function healthInsurance() {
 
     return (
         <ThemeProvider theme={myTheme}>
@@ -76,14 +76,14 @@ function lifeInsurance() {
             
             <Box sx={box.boxFormatGeneralColumn} >
                 <Typography sx={[text.textH1, { textAlign: 'center' }]}>
-                    Seguros de Vida
+                    Seguros de Salud
                 </Typography>
                 <CircleComponent data={homeCircleIcons} />
                 <Divider />
             </Box>
 
             <Typography sx={[text.textH2, { mt: '3%', ml: '5%', mr: '5%' }]}>
-                ¿Qué es un seguro de vida?
+                ¿Qué es un seguro de salud?
             </Typography>
             <ImageWithDescription imgUrlFirst={insuranceCardsData[0].imgUrl} descriptionFirst={insuranceCardsData[0].description}
                 imgUrlSecond={insuranceCardsData[1].imgUrl} descriptionSecond={insuranceCardsData[1].description} />
@@ -91,7 +91,7 @@ function lifeInsurance() {
                 <Divider sx={{ mt: '5%' }} />
             </Box>
             <Typography sx={[text.textH2, { mt: '3%', ml: '5%', mr: '5%' }]}>
-                ¿Qué cubre un seguro de vida?
+                ¿Qué cubre un seguro de salud?
             </Typography>
             <ImageWithDescription imgUrlFirst={insuranceCardsData[2].imgUrl} descriptionFirst={insuranceCardsData[2].description}
                 imgUrlSecond={insuranceCardsData[3].imgUrl} descriptionSecond={insuranceCardsData[3].description} />
@@ -100,4 +100,4 @@ function lifeInsurance() {
     )
 }
 
-export default lifeInsurance;
+export default healthInsurance;
