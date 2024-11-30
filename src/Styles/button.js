@@ -8,7 +8,10 @@ const button = {
         fontWeight: 500,
         fontSize: "20px",     
         textTransform: 'none',  
-        width: '40%'
+        width: '40%',
+        '@media screen and (max-width: 599px)': {
+            width: '100%',
+        },
     },
     buttonDarkBlueText: {
         color: myTheme.palette.common.customDarkBlue,

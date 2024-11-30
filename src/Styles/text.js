@@ -4,22 +4,65 @@ const text = {
 
     textH1: {
         color: myTheme.palette.common.customDarkBlue,
-        fontFamily: 'Encode Sans Semi Condensed',
-        fontWeight: 700,
-        fontSize: "35px",
+        fontFamily: 'League Gothic',
+        fontWeight: 400,
+        fontSize: "150px",
+        '@media screen and (max-width: 600px)': {
+            fontSize: "75px",
+            fontWeight: 300,
+        },
     },
 
-    textH2: {
-        color: myTheme.palette.common.customDarkBlue,
-        fontFamily: 'Encode Sans Semi Condensed',
-        fontWeight: 600,
-        fontSize: "2rem",
+    textH1W: {
+        color: 'white',
+        fontFamily: 'League Gothic',
+        fontWeight: 400,
+        fontSize: "130px",
+        '@media screen and (max-width: 600px)': {
+            fontSize: "60px",
+            fontWeight: 300,
+        },
     },
-    textH3: {
+
+    textH1BoxComponent: {
         color: myTheme.palette.common.customDarkBlue,
-        fontFamily: 'Encode Sans Semi Condensed',
-        fontWeight: 500,
-        fontSize: "30px",
+        fontFamily: 'League Gothic',
+        fontWeight: 400,
+        fontSize: "130px",
+        '@media screen and (max-width: 600px)': {
+            fontSize: "60px",
+            fontWeight: 300,
+        },
+    },
+
+
+
+    textH2: {
+        color: 'white',
+        fontFamily: 'League Gothic',
+        fontWeight: 400,
+        fontSize: "110px",
+        '@media screen and (max-width: 600px)': {
+            fontSize: "60px",
+            fontWeight: 300,
+        },
+    },
+
+
+
+    textH3: {
+        color: 'white',
+        fontFamily: 'League Gothic',
+        fontWeight: 400,
+        fontSize: "110px",
+        '@media screen and (max-width: 599px)': {
+            fontSize: "40px",
+            fontWeight: 300,
+        },
+        '@media screen and (min-width: 600px) and (max-width: 900px)': {
+            fontSize: "100px",
+            fontWeight: 300,
+        },
     },
 
     textH3Bold: {
@@ -28,11 +71,31 @@ const text = {
         fontWeight: 600,
         fontSize: "30px",
     },
+    textH4W: {
+        color: 'white',
+        fontFamily: 'League Gothic',
+        fontWeight: 400,
+        fontSize: "80px",
+        '@media screen and (max-width: 599px)': {
+            fontSize: "60px",
+            fontWeight: 300,
+        },
+        '@media screen and (min-width: 600px) and (max-width: 900px)': {
+            fontSize: "80px",
+            fontWeight: 300,
+        },
+    },
     textH4: {
         color: myTheme.palette.common.customDarkBlue,
         fontFamily: 'Encode Sans Semi Condensed',
         fontWeight: 500,
         fontSize: "25px",
+        '@media screen and (max-width: 599px)': {
+            fontSize: "0.8rem",
+        },
+        '@media screen and (min-width: 600px) and (max-width: 900px)': {
+            fontSize: "1.2rem",
+        },
     },
     textH4Bold: {
         color: myTheme.palette.common.customDarkBlue,
@@ -48,16 +111,27 @@ const text = {
         textDecoration: 'none',
 
     },
+    textH5W: {
+        color: 'white',
+        fontFamily: 'Encode Sans Semi Condensed',
+        fontWeight: 500,
+        fontSize: "20px",
+        textDecoration: 'none',
+        '@media screen and (max-width: 599px)': {
+            fontWeight: 400,
+        },
+
+    },
     textH6: {
         color: myTheme.palette.common.customDarkBlue,
         fontFamily: 'Encode Sans Semi Condensed',
-        fontWeight: 500,
-        fontSize: "18px",
+        fontWeight: 600,
+        fontSize: "16px",
         textDecoration: 'none',
 
     },
     textH6White: {
-        color: 'white',	
+        color: 'white',
         fontFamily: 'Encode Sans Semi Condensed',
         fontWeight: 500,
         fontSize: "15px",
@@ -73,7 +147,7 @@ const text = {
 
     },
     textH5CircleComponent: {
-        color: myTheme.palette.common.customDarkBlue,
+        color: 'white',
         fontFamily: 'Encode Sans Semi Condensed',
         fontWeight: 500,
         fontSize: "20px",
@@ -85,17 +159,20 @@ const text = {
     textFieldH6: {
         color: myTheme.palette.common.customDarkBlue,
         fontFamily: 'Encode Sans Semi Condensed',
-        fontWeight: 400,
+        fontWeight: 700,
         fontSize: "18px",
         textDecoration: 'none',
 
     },
     textFieldFocusedH6: {
-        '& .MuiOutlinedInput-root': {
-            '&.Mui-focused fieldset': {
-                borderColor: myTheme.palette.common.customBlue,
-            },
-        },
+      '& .MuiOutlinedInput-root': {
+    '&:hover .MuiOutlinedInput-notchedOutline': {
+      borderColor: 'yourHoverColor', // Cambia 'yourHoverColor' por el color que quieras
+    },
+    '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
+      borderColor: myTheme.palette.common.customBlue, // Color de borde cuando está enfocado
+    },
+  },
     },
     selectTextFieldFocusedH6: {
         color: myTheme.palette.common.customBlue, // Cambia el color del texto del textfield select
@@ -111,9 +188,11 @@ const text = {
         fontSize: "35px",
         '@media screen and (max-width: 599px)': {
             fontSize: "32px",
+            color: 'white',
         },
         '@media screen and (min-width: 600px) and (max-width: 900px)': {
             fontSize: "30px",
+
         },
     },
     textSubtitleSlider: {
@@ -123,6 +202,7 @@ const text = {
         fontSize: "30px",
         '@media screen and (max-width: 599px)': {
             fontSize: "28px",
+            color: 'white'
         },
         '@media screen and (min-width: 600px) and (max-width: 900px)': {
             fontSize: "25px",
@@ -132,9 +212,9 @@ const text = {
         fontFamily: 'Encode Sans Semi Condensed',
         fontWeight: 600,
         display: { xs: 'none', md: 'flex' },
-        letterSpacing: '.1rem',
+        // letterSpacing: '.1rem',
         textDecoration: 'none',
-        fontSize: '38px',
+        fontSize: '40px',
         color: 'white',
         '@media screen and (max-width: 600px)': {
             fontSize: '30px',
@@ -144,7 +224,7 @@ const text = {
         fontFamily: 'Encode Sans Semi Condensed',
         fontWeight: 500,
         color: 'white',
-        fontSize: "15px",
+        fontSize: "20px",
         display: "inline-block",
         position: "relative",
         textDecoration: "none",
@@ -158,6 +238,19 @@ const text = {
 
             color: myTheme.palette.common.customYellow,
         },
+    },
+
+    textNameWhoComponent: {
+        color: 'white',
+        fontFamily: 'Encode Sans Semi Condensed',
+        fontWeight: 500,
+        fontSize: "40px",
+        textDecoration: 'none',
+        textAlign: 'center',
+        '@media screen and (max-width: 600px)': {
+            fontSize: '35px',
+        },
+
     },
 
 

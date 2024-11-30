@@ -89,7 +89,7 @@ export default function FormContact() {
         date5: '',
     });
 
-    var dateFlag=0;
+    var dateFlag = 0;
     const handleChange = (fieldName, value) => {
         setFormData(prevFormData => ({
             ...prevFormData,
@@ -149,11 +149,11 @@ export default function FormContact() {
         setDates(newDates);
         setFormData(prevFormData => ({
             ...prevFormData,
-            [`date${index+1}`]: date.format('YYYY-MM-DD')
+            [`date${index + 1}`]: date.format('YYYY-MM-DD')
         }));
         dateFlag++;
-        if(dateFlag===4){
-            dateFlag=0;
+        if (dateFlag === 4) {
+            dateFlag = 0;
         }
 
     };
@@ -188,7 +188,7 @@ export default function FormContact() {
         if (dates.length === 0) {
             setIsAlertLife(true);
         } else {
-            setIsAlertLife(false);          
+            setIsAlertLife(false);
             console.log(formData);
             setIsModalLife(false);
             handleSubmit();
@@ -206,7 +206,7 @@ export default function FormContact() {
         else {
             setIsAlertCar(false);
             setIsModalCar(false);
-            console.log(formData);           
+            console.log(formData);
             handleSubmit();
 
 
@@ -256,12 +256,18 @@ export default function FormContact() {
                     <TextField
                         id="name"
                         value={formData.name}
-                        onChange={(event) => {
-                            handleChange('name', event.target.value)
+                        onChange={(event) => handleChange('name', event.target.value)}
+                        label={<Typography sx={text.textFieldH6}>Nombre</Typography>}
+                        variant="outlined"
+                        margin="normal"
+                        sx={{
+                            ...text.textFieldFocusedH6,
+                            backgroundColor: 'white', // Establece el fondo en blanco
                         }}
-                        label={<Typography sx={text.textFieldH6} >Nombre  </Typography>}
-                        variant="outlined" margin="normal"
-                        sx={text.textFieldFocusedH6} />
+                        InputLabelProps={{
+                            shrink: true, // Esto bloquea el label en la parte superior
+                        }}
+                    />
                     <TextField
                         id="lastname"
                         value={formData.lastname}

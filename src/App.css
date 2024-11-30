@@ -34,16 +34,45 @@
   margin-bottom: 2rem;
 }
 
-.image-who-Component {
-  width: '200px';
-  height: '200px';
-  border-radius: '50%';
+.image-Radius-Background {
+  height: 10rem;
+  width: 10rem;
+  
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+ 
 }
+
+.image-Radius-Background-Blue {
+  height: 9rem;
+  width: 9rem;
+  
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+ 
+}
+
+
+
 
 @media screen and (max-width: 599px) {
   .image-Radius {
-    height: 4rem;
-    width: 4rem;
+    height: 3.5rem;
+    width: 3.5rem;
+  }
+
+  .image-Radius-Background {
+    height: 4.5rem;
+    width: 4.5rem;
+   
+  }
+
+  .image-Radius-Background-Blue{
+    height: 7rem;
+    width: 7rem;
+   
   }
 
   .image-aliance-swiper {
@@ -60,11 +89,19 @@
     height: 40px;
     width: 40px;
   }
+
+ 
 }
 
 .image-aliance-swiper {
   width: 300px;
   height: 180px;
+}
+
+.image-background-aliance-swiper {
+  width: 390px;
+  height: 200px;
+  border-radius: 10px;
 }
 
 .image-aliance-footer {

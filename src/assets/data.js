@@ -9,15 +9,15 @@ import homeSlide_3 from './images/home/slides/slide_3.jpeg';
 import homeSlide_4 from './images/home/slides/slide_4.jpeg';
 import homeSlide_5 from './images/home/slides/slide_5.jpeg';
 import homeCircleCellphone from './images/home/circleIcons/cellphone.png';
-import homeCircleContact from './images/home/circleIcons/directContact.png';
-import homeCircleProtection from './images/home/circleIcons/protection.png';
-import homeCircleLegal from './images/home/circleIcons/legal.png';
+import homeCircleDisponibility from './images/home/circleIcons/disponibility.png';
+import homeCirclePersonalize from './images/home/circleIcons/personalize.png';
 import homeArticleFamilyDoctor from './images/home/article1/familyDoctor.jpg';
 import aboutUsVission from './images/aboutUs/vission.png';
 import aboutUsBackgroundVission from './images/aboutUs/backgroundVission.png';
 import aboutUsBackgroundOneSlide from './images/aboutUs/backgroundOneSlide.jpg';
 import aboutUsRocio from "./images/aboutUs/people/RocioDLaTorre.png";
 import aboutUsAndrea from "./images/aboutUs/people/AndreaCastillo.png";
+import aboutUsMiriam from "./images/aboutUs/people/MiriamDLaTorre.png";
 import aboutUs36Number from "./images/aboutUs/36number.png";
 import aig from './images/Aliances/aig.png';
 import ama from './images/Aliances/ama.png';
@@ -34,6 +34,12 @@ import sweaden from './images/Aliances/sweaden.png';
 import unidos from './images/Aliances/unidos.png';
 import confiamed from './images/Aliances/confiamed.png';
 import prueba from './images/prueba.png';
+import footerTiktok from './images/footer/tik-tok.png'
+
+import EmailIcon from '@mui/icons-material/Email';
+import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
 
 const generalData = [
   {
@@ -91,25 +97,29 @@ const homeSlides = [
   }
 ];
 
+const homeBigTitle =
+{
+  title1: 'SOMOS TU',
+  title2:'MEJOR OPCIÓN'
+
+};
+
 const homeCircleIcons = [
   {
-    id: 1, imgUrl: homeCircleContact, word1: 'Contacto', word2: 'Directo'
+    id: 1, imgUrl: homeCircleCellphone,  word1: 'Contacto', word2: 'Directo'
   },
   {
-    id: 2, imgUrl: homeCircleCellphone, word1: 'Asistencia', word2: 'Telefónica'
+    id: 2, imgUrl: homeCirclePersonalize, word1: 'Asistencia', word2: 'Personalizada'
   },
   {
-    id: 3, imgUrl: homeCircleProtection, word1: 'Protección', word2: 'Garantizada'
+    id: 3, imgUrl: homeCircleDisponibility, word1: 'Disponibilidad', word2: '24/7'
   },
-  {
-    id: 4, imgUrl: homeCircleLegal, word1: 'Asistencia', word2: 'Legal'
-  },
-
 
 ];
 
 const homeArticleComponent =
 {
+  title:'¿QUÉ ES ALDESEG?',
   data1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. ',
   data2: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla.',
   urlBackgroundImg: prueba,
@@ -120,6 +130,17 @@ const homeArticleComponent =
   heightBackgroundImg: '110px',
   heightBackgroundImg600: '150px',
   heightBackgroundImg700: '150px',
+
+};
+
+const homePrincipalFactsComponent =
+{
+  number1: '1',
+  text1: 'ALDESEG es un intermediario profesional entre el cliente y las compañías de seguros.',
+  number2: '2',
+  text2: 'Nuestra función principal es asesorar a los clientes sobre las mejores coberturas según sus necesidades.',
+  number3: '3',
+  text3: 'Ademas gestionamos los trámites necesarios para la contratación de pólizas y la resolución de siniestros.',
 
 };
 
@@ -170,6 +191,31 @@ const homeAliancesComponent = [
 
 ];
 
+const footerInformation=[
+  {
+    id:1 , icon: EmailIcon, text:'servicio.cliente@aldeseg.com'
+  },
+  {
+    id:2, icon: LocalPhoneIcon, text:'098-339-5633'
+  }
+];
+
+const footerSocialMedia=[
+  {
+    id:1 , icon: FacebookIcon, text:'Facebook', href: 'http://localhost:3000/'
+  },
+  {
+    id:2, icon: InstagramIcon, text:'Instagram', href: 'http://localhost:3000/'
+  },
+];
+
+const footerSocialTiktok={
+  image: footerTiktok,
+  text:'Tiktok',
+  href: 'http://localhost:3000/'
+
+};
+
 const footerAliances = [
   {
     id: 1, imgUrl: sweaden,
@@ -214,8 +260,15 @@ const footerAliances = [
 const aboutUsSlide =
 {
   imgUrl: aboutUsBackgroundOneSlide,
-  title: 'Asesores y Productores de Seguros',
+  title: 'Asesórate con los mejores en ALDESEG',
   subtitle: 'Somos un puente sólido y confiable entre nuestros clientes y las mejores compañías de seguros del mercado, ofrecemos soluciones personalizadas que se adaptan a tus necesidades. ',
+
+};
+
+const aboutUsBigTitle =
+{
+  title1: 'NUESTRO',
+  title2:'EQUIPO'
 
 };
 const aboutUsMisionVision =
@@ -234,7 +287,9 @@ const aboutUsMisionVision =
 };
 const aboutUsWhoComponent = [
   {
-    id: 1, imgUrl: aboutUsRocio, name: "Rocío D' LaTorre", phrase: '"Nuestra prioridad es brindar una cobertura que no solo cumpla con las expectativas de nuestros clientes, sino que las supere, proporcionando servicios excepcionales."',
+    id: 1, imgUrl: aboutUsRocio, name: "Rocío D' LaTorre", 
+    phrase: 
+    'Gerente general y cofundadora de ALDESEG, se graduó en Administración de Empresas en la Universidad Central del Ecuador. A los 19 años, comenzó su carrera como asistente de emisión y pronto se enamoró del mercado de seguros, lo que la llevó a obtener una maestría en el campo. Con 37 años de experiencia, ha ocupado puestos como jefa de emisión y jefa de siniestros. Hoy, su pasión por lo que hace sigue siendo su principal motivación.',
     numberUrl: aboutUs36Number,
     list1: 'Gestión eficiente: 15 años en el análisis de riesgos y seguros', 
     list2: 'Líder en cumplimiento: 10+ años en aseguradoras y brokers.',
@@ -244,8 +299,10 @@ const aboutUsWhoComponent = [
 
   },
   {
-    id: 2, imgUrl: aboutUsAndrea, name: "Andrea Castillo", phrase: '"Nuestra prioridad es brindar una cobertura que no solo cumpla con las expectativas de nuestros clientes, sino que las supere, proporcionando servicios excepcionales."',
-    numberUrl: aboutUs36Number,
+    id: 2, imgUrl: aboutUsMiriam, name: "Miriam D' LaTorre", 
+    phrase: 
+    'Gerente de operaciones de ALDESEG, ha adquirido un profundo conocimiento del mercado asegurador a través de su experiencia en diversas aseguradoras. Junto a su hermana Rocío, fundó ALDESEG con el sueño de brindar un servicio excepcional a la gente, comprometida a ofrecer asesoría y soluciones de seguros de alta calidad.',
+    numberUrl: aboutUs36Number, 
     list1: 'Gestión eficiente: 15 años en el análisis de riesgos y seguros', 
     list2: 'Líder en cumplimiento: 10+ años en aseguradoras y brokers.',
     list3: '15 años en el desarrollo de estrategias de cobertura en seguros.',
@@ -253,8 +310,10 @@ const aboutUsWhoComponent = [
     list5: 'Gestión de reclamos: décadas de experiencia en aseguradoras.',
   },
   {
-    id: 3, imgUrl: aboutUsRocio, name: "Miriam D' LaTorre", phrase: '"Nuestra prioridad es brindar una cobertura que no solo cumpla con las expectativas de nuestros clientes, sino que las supere, proporcionando servicios excepcionales."',
-    numberUrl: aboutUs36Number, 
+    id: 3, imgUrl: aboutUsAndrea, name: "Andrea Castillo", 
+    phrase: 
+    'Como abogada y Gerente Comercial de ALDESEG, aporta una visión innovadora y un enfoque centrado en el cliente. Su liderazgo se refleja en la creación de estrategias comerciales efectivas y en la implementación de soluciones personalizadas, garantizando tanto la satisfacción como la lealtad de los clientes.',
+    numberUrl: aboutUs36Number,
     list1: 'Gestión eficiente: 15 años en el análisis de riesgos y seguros', 
     list2: 'Líder en cumplimiento: 10+ años en aseguradoras y brokers.',
     list3: '15 años en el desarrollo de estrategias de cobertura en seguros.',
@@ -264,8 +323,9 @@ const aboutUsWhoComponent = [
 ];
 
 export {
-  generalData, generalCardsData, homeSlides, homeCircleIcons, homeArticleComponent, homeAliancesComponent,
-  footerAliances,
-  aboutUsMisionVision, aboutUsSlide, aboutUsWhoComponent
+  generalData, generalCardsData, 
+  homeSlides, homeCircleIcons, homeArticleComponent, homeAliancesComponent, homeBigTitle, homePrincipalFactsComponent, 
+  footerAliances, footerInformation, footerSocialMedia, footerSocialTiktok,
+  aboutUsSlide, aboutUsBigTitle, aboutUsWhoComponent, aboutUsMisionVision, 
 };
 
