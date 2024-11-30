@@ -46,7 +46,7 @@ export default function ImageWithDescription({ imgUrlFirst, descriptionFirst, im
                                 height: '100%'
                             }
                         }}>
-                            <Typography sx={[text.textH5, {
+                            <Typography sx={[text.textH5Insurance, {
                                 m: '5%', width: '90%',
 
                             }]}>
@@ -73,7 +73,7 @@ export default function ImageWithDescription({ imgUrlFirst, descriptionFirst, im
                                 height: '100%'
                             }
                         }}>
-                            <Typography sx={[text.textH5, {
+                            <Typography sx={[text.textH5Insurance, {
                                 m: '5%', width: '90%', ml: '5%'
                             }]}>
                                 {descriptionSecond}

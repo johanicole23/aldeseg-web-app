@@ -8,28 +8,24 @@ import generalCard from "../Styles/card";
 import text from "../Styles/text";
 import button from "../Styles/button";
 
-export default function GeneralCard({ imgUrl, name, description, link}) {
+export default function GeneralCard({ imgUrl, name, description, link }) {
     return (
         <Card sx={generalCard.card}>
             <CardActionArea sx={generalCard.CardActionArea} disabled>
-                <CardMedia
-                    component="img"
-                    height="190"
-                    src={imgUrl}
-                    alt="green iguana"
-                    sx={generalCard.cardMedia}
-                />
+                <CardMedia>
+                    <img src={imgUrl} alt={"green iguana"} className='card-Media-Insurance' />
+                </CardMedia>
                 <CardContent sx={generalCard.cardContent}>
-                    <Typography sx={text.textH2} component="div">
+                    <Typography sx={text.textH2Insurance} component="div">
                         {name}
                     </Typography>
-                    <Typography sx={text.textH5} color="text.secondary">
+                    <Typography sx={text.textH5Insurance} color="text.secondary">
                         {description}
                     </Typography>
                 </CardContent>
             </CardActionArea>
             <CardActions sx={generalCard.cardActions}>
-                <Button variant="contained" href={link} sx={[button.buttonWhiteText, {width: "100%"}]}>
+                <Button variant="contained" href={link} sx={[button.buttonWhiteText, { width: "100%" }]}>
                     Ver más
                 </Button>
             </CardActions>

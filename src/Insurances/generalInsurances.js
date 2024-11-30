@@ -9,7 +9,11 @@ import GeneralCard from '../ExtraComponents/generalCard';
 import generalCard from '../Styles/card';
 import { generalCardsData } from '../assets/data';
 import WhatsAppButton from '../ExtraComponents/whatsappButton';
-import Footer from '../ExtraComponents/footer';
+import Footer from '../ExtraComponents/simpleFooter';
+
+import {
+    footerInformation, footerSocialMedia, footerSocialTiktok
+} from '../assets/data';
 
 function GeneralInsurances() {
 
@@ -19,18 +23,18 @@ function GeneralInsurances() {
             <WhatsAppButton />
             <ImageSlider2 data={generalData} />
             <Box alignItems='center' justifyContent={'center'} sx={{ mt: '5%', width: '90%', marginLeft: '5%' }}>
-                <Typography sx={[text.textH1, { textAlign: 'center' }]}>
+                <Typography sx={[text.textH1Insurance, { textAlign: 'center' }]}>
                     SEGUROS
                 </Typography>
                 <br></br>
-                <Typography sx={[text.textH5, { textAlign: 'center' }]}>
+                <Typography sx={[text.textH5Insurance, { textAlign: 'center' }]}>
                     Contamos con una amplia gama de servicios para satisfacer las necesidades de protección y seguridad de nuestros clientes.
                 </Typography>
                 <Divider sx={{mt: '5%'}}/>
             </Box>
             
             <Box alignItems='center' justifyContent={'center'} sx={{ mt: '5%' }}>
-                <Typography sx={[text.textH2, { textAlign: 'center' }]}>
+                <Typography sx={[text.textH2Insurance, { textAlign: 'center' }]}>
                     SEGUROS INCLUIDOS:
                 </Typography>
                 <Box display={'flex'} justifyContent={'space-around'} alignItems={'center'}
@@ -48,7 +52,7 @@ function GeneralInsurances() {
                     }
                 </Grid>
             </Box>
-            <Footer title="Footer" />
+            <Footer information={footerInformation} socialMedia={footerSocialMedia} tiktok={footerSocialTiktok} />
         </Box>
         </ThemeProvider >
     )

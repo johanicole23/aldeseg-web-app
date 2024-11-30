@@ -17,6 +17,12 @@
     width: 50px;
   }
 
+  .card-Media-Insurance {
+    height: 80px;
+
+  }
+
+
 }
 
 .App-sweaden {
@@ -54,6 +60,15 @@
  
 }
 
+.card-Media-Insurance {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  height: 100px;
+  width: 100%;
+ 
+}
+
+
 
 
 
@@ -89,6 +104,12 @@
     height: 40px;
     width: 40px;
   }
+
+  .card-Media-Insurance {
+    height: 70px;
+
+  }
+
 
  
 }

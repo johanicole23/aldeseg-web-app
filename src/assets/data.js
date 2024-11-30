@@ -345,8 +345,12 @@ const insuranceCardsData = [
   }
 ];
 export {
-  generalData, generalCardsData, homeSlides, homeCircleIcons, homeArticleComponent, homeAliancesComponent,
-  footerAliances, aboutUsMisionVision, aboutUsSlide, aboutUsWhoComponent, phoneNumber, insuranceCardsData
+ 
+  generalData, generalCardsData, 
+  homeSlides, homeCircleIcons, homeArticleComponent, homeAliancesComponent, homeBigTitle, homePrincipalFactsComponent, 
+  footerAliances, footerInformation, footerSocialMedia, footerSocialTiktok,
+  aboutUsSlide, aboutUsBigTitle, aboutUsWhoComponent, aboutUsMisionVision,
+  phoneNumber, insuranceCardsData
 
 };
 
