@@ -10,14 +10,14 @@ export default function ImageWithDescription({ imgUrlFirst, descriptionFirst, im
                 <Box display={'flex'} sx={{
                     '@media screen and (max-width: 699px)': {
                         flexDirection: 'column',
-                        mb: '5%'
+                        margin: '5%'
                     },
                     '@media screen and (min-width: 700px) and (max-width: 840px)': {
                         flexDirection: 'column',
-                        mb: '5%'
+                        margin: '5%'
                     }
                 }}>
-                    <Grid xs={4}>
+                    <Grid item xs={12} sm={4}>
                         <Box sx={{
                             display: 'flex',
                             alignItems: 'center',
@@ -25,13 +25,13 @@ export default function ImageWithDescription({ imgUrlFirst, descriptionFirst, im
                             mb: '5%'
                         }}>
                             <img src={imgUrlFirst} alt={'alt'} style={{
-                                width: '50%',
+                                width: '60%',
                                 height: 'auto',
                                 borderRadius: '10px'
                             }} />
                         </Box>
                     </Grid>
-                    <Grid xs={8}>
+                    <Grid item xs={12} sm={8}>
                         <Box sx={{
                             backgroundColor: `${myTheme.palette.common.customGrey}`,
                             borderRadius: '10px',
@@ -47,13 +47,8 @@ export default function ImageWithDescription({ imgUrlFirst, descriptionFirst, im
                             }
                         }}>
                             <Typography sx={[text.textH5, {
-                                mt: '5%', width: '90%', ml: '5%',
-                                '@media screen and (max-width: 699px)': {
-                                    fontSize: '1rem'
-                                },
-                                '@media screen and (min-width: 700px) and (max-width: 840px)': {
-                                    fontSize: '1rem'
-                                }
+                                m: '5%', width: '90%',
+
                             }]}>
                                 {descriptionFirst}
                             </Typography>
@@ -61,16 +56,12 @@ export default function ImageWithDescription({ imgUrlFirst, descriptionFirst, im
                     </Grid>
                 </Box>
                 <Box display={'flex'} sx={{
-                    '@media screen and (max-width: 699px)' :{
+                    '@media screen and (max-width: 840px)': {
                         flexDirection: 'column',
-                        mb: '5%'
-                    },
-                    '@media screen and (min-width: 700px) and (max-width: 840px)': {
-                        flexDirection: 'column',
-                        mb: '5%'
+                        margin: '5% 0 5% 5%'
                     }
                 }}>
-                    <Grid xs={8}>
+                    <Grid item xs={12} sm={8}>
                         <Box sx={{
                             backgroundColor: `${myTheme.palette.common.customGrey}`,
                             borderRadius: '10px',
@@ -78,31 +69,24 @@ export default function ImageWithDescription({ imgUrlFirst, descriptionFirst, im
                             height: '80%',
                             alignContent: 'flex-start',
                             mb: '5%',
-                            '@media screen and (max-width: 699px)': {
-                                height: '100%'
-                            },
-                            '@media screen and (min-width: 700px) and (max-width: 840px)': {
+                            '@media screen and (max-width: 840px)': {
                                 height: '100%'
                             }
                         }}>
-                            <Typography sx={[text.textH5, { mt: '5%', width: '90%', ml: '5%',
-                                '@media screen and (max-width: 699px)': {
-                                    fontSize: '1rem'
-                                },
-                                '@media screen and (min-width: 700px) and (max-width: 840px)': {
-                                    fontSize: '1rem'
-                                }
-                             }]}>
+                            <Typography sx={[text.textH5, {
+                                m: '5%', width: '90%', ml: '5%'
+                            }]}>
                                 {descriptionSecond}
                             </Typography>
                         </Box>
                     </Grid>
-                    <Grid xs={4}>
+                    <Grid item xs={12} sm={4}>
                         <Box sx={{
                             display: 'flex',
                             alignItems: 'center',
                             justifyContent: 'center',
-                            mb: '5%'
+                            mb: '5%',
+                           
                         }}>
                             <img src={imgUrlSecond} alt={'alt'} style={{
                                 width: '50%',

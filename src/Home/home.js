@@ -9,15 +9,9 @@ import BigTitleComponent from '../ExtraComponents/bigTitleComponent';
 import CircleComponent from '../ExtraComponents/circleComponent';
 import ArticleComponent from '../ExtraComponents/articleComponent';
 import SwiperComponent from '../ExtraComponents/swiperComponent';
-import PrincipalFacts from '../ExtraComponents/principalFacts';
-import BackgroundDetail from '../ExtraComponents/backgroundDetail';
 
-import {
-    homeSlides, homeCircleIcons, homeArticleComponent, homeAliancesComponent, homeBigTitle,
-    homePrincipalFactsComponent, footerInformation, footerSocialMedia, footerSocialTiktok
-} from '../assets/data';
-
-import { Slide } from 'react-awesome-reveal';
+import WhatsAppButton from '../ExtraComponents/whatsappButton';
+import { homeSlides, homeCircleIcons, homeArticleComponent, homeAliancesComponent } from '../assets/data';
 
 
 function Home() {
@@ -25,6 +19,15 @@ function Home() {
     return (
         <ThemeProvider theme={myTheme} >
             <NavBar title="AppBar" />
+
+            <WhatsAppButton />
+            <ImageSlider2 data={homeSlides} />
+            <Box sx={box.boxFormatGeneralColumn} >
+                <Typography sx={text.textH2}>Lo mejor de nosotros</Typography>
+                <Typography sx={text.textH4}>en todo momento</Typography>
+                <CircleComponent data={homeCircleIcons} />
+            </Box>
+
 
             <Box sx={{ backgroundColor: 'primary.main' }}>
                 <ImageSlider2 data={homeSlides} />

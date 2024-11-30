@@ -8,6 +8,7 @@ import { generalData } from '../assets/data';
 import GeneralCard from '../ExtraComponents/generalCard';
 import generalCard from '../Styles/card';
 import { generalCardsData } from '../assets/data';
+import WhatsAppButton from '../ExtraComponents/whatsappButton';
 import Footer from '../ExtraComponents/footer';
 
 function GeneralInsurances() {
@@ -15,6 +16,7 @@ function GeneralInsurances() {
     return (
         <ThemeProvider theme={myTheme}>
             <div><NavBar title="AppBar Component" /></div>
+            <WhatsAppButton />
             <ImageSlider2 data={generalData} />
             <Box alignItems='center' justifyContent={'center'} sx={{ mt: '5%', width: '90%', marginLeft: '5%' }}>
                 <Typography sx={[text.textH1, { textAlign: 'center' }]}>

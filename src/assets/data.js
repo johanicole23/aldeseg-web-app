@@ -61,22 +61,22 @@ const generalData = [
 
 const generalCardsData = [
   {
-    id: 1, name: 'Seguro 1', description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat”', imgUrl: general_1, link: '/seguro-vida'
+    id: 1, name: 'Seguro 1', description: 'Descripción seguro 1', imgUrl: general_1, link: '/seguro-vida'
   },
   {
-    id: 2, name: 'Seguro 2', description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat”', imgUrl: general_2, link: '/'
+    id: 2, name: 'Seguro 2', description: 'Descripción seguro 2', imgUrl: general_2, link: '/seguro-salud'
   },
   {
-    id: 3, name: 'Seguro 3', description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat”', imgUrl: general_3, link: '/'
+    id: 3, name: 'Seguro 3', description: 'Descripción seguro 3', imgUrl: general_3, link: '/seguro-vehiculo'
   },
   {
-    id: 4, name: 'Seguro 4', description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat”', imgUrl: general_4, link: '/'
+    id: 4, name: 'Seguro 4', description: 'Descripción seguro 4', imgUrl: general_4, link: '/seguro-responsabilidad'
   },
   {
-    id: 5, name: 'Seguro 5', description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat”', imgUrl: general_5, link: '/'
+    id: 5, name: 'Seguro 5', description: 'Descripción seguro 5', imgUrl: general_5, link: '/seguro-hogar'
   },
   {
-    id: 6, name: 'Seguro 6', description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat”', imgUrl: general_1, link: '/'
+    id: 6, name: 'Seguro 6', description: 'Descripción seguro 6', imgUrl: general_1, link: '/'
   }
 ];
 const homeSlides = [
@@ -322,10 +322,31 @@ const aboutUsWhoComponent = [
   },
 ];
 
+const phoneNumber = '593983879340';
+
+const insuranceCardsData = [
+  {
+    id: 1, name: 'Seguro 1', description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat”', imgUrl: general_1, link: '/seguro-vida'
+  },
+  {
+    id: 2, name: 'Seguro 2', description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat”', imgUrl: general_2, link: '/'
+  },
+  {
+    id: 3, name: 'Seguro 3', description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat”', imgUrl: general_3, link: '/'
+  },
+  {
+    id: 4, name: 'Seguro 4', description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat”', imgUrl: general_4, link: '/'
+  },
+  {
+    id: 5, name: 'Seguro 5', description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat”', imgUrl: general_5, link: '/'
+  },
+  {
+    id: 6, name: 'Seguro 6', description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat”', imgUrl: general_1, link: '/'
+  }
+];
 export {
-  generalData, generalCardsData, 
-  homeSlides, homeCircleIcons, homeArticleComponent, homeAliancesComponent, homeBigTitle, homePrincipalFactsComponent, 
-  footerAliances, footerInformation, footerSocialMedia, footerSocialTiktok,
-  aboutUsSlide, aboutUsBigTitle, aboutUsWhoComponent, aboutUsMisionVision, 
+  generalData, generalCardsData, homeSlides, homeCircleIcons, homeArticleComponent, homeAliancesComponent,
+  footerAliances, aboutUsMisionVision, aboutUsSlide, aboutUsWhoComponent, phoneNumber, insuranceCardsData
+
 };
 
