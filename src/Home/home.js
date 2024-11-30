@@ -10,8 +10,18 @@ import CircleComponent from '../ExtraComponents/circleComponent';
 import ArticleComponent from '../ExtraComponents/articleComponent';
 import SwiperComponent from '../ExtraComponents/swiperComponent';
 
+import { Slide } from 'react-awesome-reveal';
 import WhatsAppButton from '../ExtraComponents/whatsappButton';
-import { homeSlides, homeCircleIcons, homeArticleComponent, homeAliancesComponent } from '../assets/data';
+import PrincipalFacts from '../ExtraComponents/principalFacts';
+import BackgroundDetail from '../ExtraComponents/backgroundDetail';
+
+import {
+    homeSlides, homeCircleIcons, homeArticleComponent, homeAliancesComponent, homeBigTitle,
+    homePrincipalFactsComponent, footerInformation, footerSocialMedia, footerSocialTiktok
+} from '../assets/data';
+
+
+
 
 
 function Home() {
