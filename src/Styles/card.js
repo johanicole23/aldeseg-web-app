@@ -52,7 +52,7 @@ const generalCard = {
         '@media screen and (max-width: 500px)': {
             height: '130px',
         },
-        '@media screen and (501px <= width <= 900px)': {
+        '@media screen and (min-width: 501px) and (max-width: 900px)': {
             height: '100px',
         },
     },
@@ -64,8 +64,12 @@ const generalCard = {
         backgroundColor: 'white',
         borderBottomLeftRadius: '20px',
         borderBottomRightRadius: '20px',
-        '@media screen and (501px <= width <= 900px)': {
-            height: '95px',
+        height: '150px',
+        '@media screen and (max-width: 500px)': {
+            height: '130px',
+        },
+        '@media screen and (min-width: 501px) and (max-width: 900px)': {
+            height: '110px',
         },
     },
     cardActions: {
@@ -77,7 +81,7 @@ const generalCard = {
         '@media screen and (max-width: 500px)': {
             paddingBottom: "3%",
         },
-        '@media screen and (501px <= width <= 900px)': {
+        '@media screen and (min-width: 501px) and (max-width: 900px)': {
             paddingBottom: "10%",
         },
     },

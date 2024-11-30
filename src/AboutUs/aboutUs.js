@@ -24,9 +24,7 @@ function AboutUs() {
             <NavBar title="AppBar" />
 
             <WhatsAppButton />
-            <OneSlide data={aboutUsSlide} />
-
-
+        
             <Box sx={{ backgroundColor: 'primary.main' }}>
                 <OneSlide data={aboutUsSlide} />
                 <BigTitleComponent data={aboutUsBigTitle} />

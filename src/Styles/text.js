@@ -165,14 +165,14 @@ const text = {
 
     },
     textFieldFocusedH6: {
-      '& .MuiOutlinedInput-root': {
-    '&:hover .MuiOutlinedInput-notchedOutline': {
-      borderColor: 'yourHoverColor', // Cambia 'yourHoverColor' por el color que quieras
-    },
-    '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
-      borderColor: myTheme.palette.common.customBlue, // Color de borde cuando está enfocado
-    },
-  },
+        '& .MuiOutlinedInput-root': {
+            '&:hover .MuiOutlinedInput-notchedOutline': {
+                borderColor: 'yourHoverColor', // Cambia 'yourHoverColor' por el color que quieras
+            },
+            '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
+                borderColor: myTheme.palette.common.customBlue, // Color de borde cuando está enfocado
+            },
+        },
     },
     selectTextFieldFocusedH6: {
         color: myTheme.palette.common.customBlue, // Cambia el color del texto del textfield select
@@ -250,6 +250,31 @@ const text = {
         '@media screen and (max-width: 600px)': {
             fontSize: '35px',
         },
+
+    },
+
+    textH1Insurance: {
+        color: myTheme.palette.common.customDarkBlue,
+        fontFamily: 'Encode Sans Semi Condensed',
+        fontWeight: 700,
+        fontSize: "35px",
+    },
+
+
+    textH2Insurance: {
+        color: myTheme.palette.common.customDarkBlue,
+        fontFamily: 'Encode Sans Semi Condensed',
+        fontWeight: 600,
+        fontSize: "2rem",
+    },
+
+
+    textH5Insurance: {
+        color: myTheme.palette.common.customDarkBlue,
+        fontFamily: 'Encode Sans Semi Condensed',
+        fontWeight: 500,
+        fontSize: "20px",
+        textDecoration: 'none',
 
     },
 

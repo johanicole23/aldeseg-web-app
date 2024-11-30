@@ -47,7 +47,7 @@ function lifeInsurance() {
                         mt: '8%'
                     }
                 }}>
-                    <Typography sx={[text.textH1, {
+                    <Typography sx={[text.textH1Insurance, {
                         '@media screen  and (max-width: 840px)': {
                             fontSize: '2rem'
                         }
@@ -55,7 +55,7 @@ function lifeInsurance() {
                         Seguros de Vida
                     </Typography>
                     <br></br>
-                    <Typography sx={[text.textH5, {
+                    <Typography sx={[text.textH5Insurance, {
                         '@media screen and (max-width: 840px)': {
                             fontSize: '1rem'
                         }
@@ -74,15 +74,15 @@ function lifeInsurance() {
                 <StyledBreadcrumb component="a" href="#" label="Seguros de Vida" />
             </Box>
             
-            <Box sx={box.boxFormatGeneralColumn} >
-                <Typography sx={[text.textH1, { textAlign: 'center' }]}>
+            <Box sx={box.boxFormatGeneralInsurance} >
+                <Typography sx={[text.textH1Insurance, { textAlign: 'center' }]}>
                     Seguros de Vida
                 </Typography>
                 <CircleComponent data={homeCircleIcons} />
                 <Divider />
             </Box>
 
-            <Typography sx={[text.textH2, { mt: '3%', ml: '5%', mr: '5%' }]}>
+            <Typography sx={[text.textH2Insurance, { mt: '3%', ml: '5%', mr: '5%' }]}>
                 ¿Qué es un seguro de vida?
             </Typography>
             <ImageWithDescription imgUrlFirst={insuranceCardsData[0].imgUrl} descriptionFirst={insuranceCardsData[0].description}
@@ -90,7 +90,7 @@ function lifeInsurance() {
             <Box alignItems='center' justifyContent={'center'} sx={{ width: '90%', marginLeft: '5%' }}>
                 <Divider sx={{ mt: '5%' }} />
             </Box>
-            <Typography sx={[text.textH2, { mt: '3%', ml: '5%', mr: '5%' }]}>
+            <Typography sx={[text.textH2Insurance, { mt: '3%', ml: '5%', mr: '5%' }]}>
                 ¿Qué cubre un seguro de vida?
             </Typography>
             <ImageWithDescription imgUrlFirst={insuranceCardsData[2].imgUrl} descriptionFirst={insuranceCardsData[2].description}

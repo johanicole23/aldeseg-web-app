@@ -31,14 +31,7 @@ function Home() {
             <NavBar title="AppBar" />
 
             <WhatsAppButton />
-            <ImageSlider2 data={homeSlides} />
-            <Box sx={box.boxFormatGeneralColumn} >
-                <Typography sx={text.textH2}>Lo mejor de nosotros</Typography>
-                <Typography sx={text.textH4}>en todo momento</Typography>
-                <CircleComponent data={homeCircleIcons} />
-            </Box>
-
-
+         
             <Box sx={{ backgroundColor: 'primary.main' }}>
                 <ImageSlider2 data={homeSlides} />
 
