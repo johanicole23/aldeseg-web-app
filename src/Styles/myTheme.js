@@ -4,23 +4,26 @@ const myTheme = createTheme({
   palette: {
     common: {
       customDark: '#00000',
-      customDarkBlue: '#000729',
-      customYellow: '#FED330',
-      customBlue: '#081A73',
+      customDarkBlue: '#004380',
+      customYellow: '#FFE964',
+      customBlue: '#0B67BB',
       customLightBlue: '#2FC1EF',
       customFooterBlue:'#F1F5FF',
       customYellowTransparent: 'rgba(254, 211, 48, 0.7)',
       customGrey: '#F2F2F2',
     },
     primary: {
-      main: '#000729',
+      main: '#004380',
     },
     secondary: {
-      main: '#FED330',
+      main: '#FFE964',
     },
     tertiary: {
-      main: '#081A73',
+      main: '#0B67BB',
     },
+    quaternary:{
+      main: '#ADADAD',
+    }
   },
 });
 

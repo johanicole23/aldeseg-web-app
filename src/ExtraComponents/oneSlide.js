@@ -17,10 +17,7 @@ const OneSlide = ({ data }) => {
                 justifyContent: 'left',
                 alignItems: 'left',
                 padding: '1rem 0',
-                '@media screen and (max-width: 599px)': {
-                    height: 'auto'
-                },
-                '@media screen and (min-width: 600px) and (max-width: 900px)': {
+                '@media screen and (max-width: 900px)': {
                     height: 'auto'
                 },
             }}>
@@ -36,7 +33,7 @@ const OneSlide = ({ data }) => {
                         width: '60%',
                     }
                 }}>
-                    <Typography sx={[text.textH1, {
+                    <Typography sx={[text.textH3Bold, {
                         '@media screen and (max-width: 600px)': {
                             fontSize: '2rem'
                         },
@@ -47,7 +44,7 @@ const OneSlide = ({ data }) => {
                         {data.title}
                     </Typography>
                     <br></br>
-                    <Typography sx={[text.textH3, {
+                    <Typography sx={[text.textH4, {
                         '@media screen and (max-width: 600px)': {
                             fontSize: '1.5rem'
                         },

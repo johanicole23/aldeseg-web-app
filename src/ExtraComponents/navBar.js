@@ -23,12 +23,22 @@ import logo from '../assets/images/logo.png';
 const pages = [
     {
 
-        title: 'Seguros',
+        title: 'Inicio',
         href: '/seguros',
     },
     {
 
-        title: 'Nosotros',
+        title: 'Conócenos',
+        href: '/nosotros',
+    },
+    {
+
+        title: 'Cotizador',
+        href: '/seguros',
+    },
+    {
+
+        title: 'Contáctanos',
         href: '/nosotros',
     }
 ];
@@ -58,7 +68,7 @@ function ResponsiveAppBar() {
                             <img src={logo} className="App-logo" alt="logo" />
                         </Box>
                         <Typography component={Link} to="/" sx={text.titleNavBar} >
-                            aldeseg
+                            ALDESEG
                         </Typography>
 
                         <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -124,14 +134,14 @@ function ResponsiveAppBar() {
                             }}
                             component={Link} to="/"
                         >
-                            aldeseg
+                            ALDESEG
                         </Typography>
-                        <Box sx={{ marginLeft: '45%', flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+                        <Box sx={{ marginLeft: '15%', flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                             {pages.map((page) => (
                                 <Button
                                     key={page.title}
                                     onClick={handleCloseNavMenu}
-                                    sx={{ ml: '15%', my: 2, color: 'white', display: 'block' }}
+                                    sx={{ ml: '5%', my: 2, color: 'white', display: 'block' }}
                                 >
                                     <Typography
                                         component={Link}

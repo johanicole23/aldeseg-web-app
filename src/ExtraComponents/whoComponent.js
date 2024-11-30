@@ -4,38 +4,49 @@ import {
     useTheme, Modal, List, ListItem, ListItemIcon,
 } from "@mui/material";
 import { FiberManualRecord } from '@mui/icons-material';
+
 import text from "../Styles/text";
 import box from "../Styles/box";
 import button from "../Styles/button";
 import myTheme from '../Styles/myTheme';
+
+import yellowBackground from '../assets/images/prueba.png';
 import { set } from 'date-fns';
 
 
 const WhoComponent = ({ data }) => {
-    const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 600);
+
     const theme = useTheme();
     const isXs = useMediaQuery(theme.breakpoints.down('xs'));
     const [isModalExperience, setIsModalExperience] = useState(false);
-
+    const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 600);
+    const [isMediumScreen, setIsMediumScreen] = useState(window.innerWidth > 600 && window.innerWidth <= 900);
 
     useEffect(() => {
         const handleResize = () => {
             setIsSmallScreen(window.innerWidth <= 600);
+            setIsMediumScreen(window.innerWidth > 600 && window.innerWidth <= 900);
         };
 
         window.addEventListener('resize', handleResize);
 
-        // Limpia el event listener cuando el componente se desmonte
         return () => {
             window.removeEventListener('resize', handleResize);
         };
     }, []);
 
     const style = {
-        width: isSmallScreen ? '120px' : '200px',
-        height: isSmallScreen ? '120px' : '200px',
-        borderRadius: '50%',
+        width: isSmallScreen ? '18rem' : '15rem',
+        height: isSmallScreen ? '22rem' : '19rem',
+        transform: isSmallScreen
+            ? 'translate(0, 14px)'
+            : isMediumScreen
+                ? 'translate(-12px, 10px)'
+                : 'translate(10%, 10px)',
+
     };
+
+    
 
     const handleCloseModal = () => {
         setIsModalExperience(false);
@@ -55,70 +66,40 @@ const WhoComponent = ({ data }) => {
                     },
                 }}>
                 {data.map((item) => (
-                    <Paper sx={box.paperBoxWhoComponent} >
+
+                    <Box margin='3rem 0'>
                         <Grid container spacing={2}>
-                            <Grid xs={6} sm={4} md={3}>
-                                <Box sx={{
-                                    display: 'flex',
-                                    alignItems: 'center',
-                                    justifyContent: 'center',
-                                }}>
+                            <Grid xs={12} sm={5} md={3}>
+                                <Box >
                                     <img src={item.imgUrl} alt={item.imgUrl} style={style} />
                                 </Box>
                             </Grid>
 
-                            <Grid xs={6} sm={8} md={9}>
-                                <Box sx={{ ...box.boxContentWhoComponent, display: { xs: 'none', sm: 'flex' } }}>
-                                    <Typography sx={text.textH2} >{item.name}</Typography>
-                                    <Typography marginTop={'1rem'} sx={{ ...text.textH5, /*fontStyle: 'italic'*/ }} >{item.phrase}</Typography>
-                                    <Box display={'flex'} justifyContent="flex-end" >
-                                        <Button
-                                            key={item.id}
-                                            variant="contained"
-                                            color={item.id % 2 === 0 ? 'secondary' : 'primary'}
-                                            onClick={handleModalExperience}
-                                            sx={button.buttonWhiteText}
-                                        >
-                                            Experiencia
-                                        </Button>
+                            <Grid xs={12} sm={7} md={9}>
+                                <Box sx={box.boxContentWhoComponent}>
+                                    <Paper sx={box.paperBoxWhoComponent} >
+                                        <Typography sx={text.textNameWhoComponent} >{item.name}</Typography>
+                                    </Paper>
+                                    <Box sx={box.boxPhraseWhoComponent}>
+                                        <Typography sx={{ ...text.textH5W, textAlign: 'justify' }} >{item.phrase}</Typography>
+                                        <Box display={'flex'} justifyContent="flex-start" mt='2rem' >
+                                            <Button
+                                                key={item.id}
+                                                variant="contained"
+                                                color='tertiary'
+                                                onClick={handleModalExperience}
+                                                sx={button.buttonWhiteText}
+                                            >
+                                                Experiencia
+                                            </Button>
+                                        </Box>
                                     </Box>
 
-                                </Box>
-                                <Box sx={{
-                                    alignItems: 'space-around',
-                                    justifyContent: 'flex-start',
-                                    flexDirection: 'column',
-                                    margin: '1rem 4%',
-                                    display: {
-                                        xs: 'flex',
-                                        sm: 'none'
-                                    }
-
-                                }}>
-                                    <Typography sx={text.textH3Bold} >{item.name}</Typography>
 
                                 </Box>
                             </Grid>
                         </Grid>
-                        <Box sx={{
-                            ...box.boxContentWhoComponent, display: { xs: 'flex', sm: 'none' }
 
-                        }}>
-                            <Typography margin={'1rem 0 '} sx={text.textH5} >{item.phrase}</Typography>
-                            <Box display={'flex'} justifyContent="flex-end" >
-                                <Button
-                                    key={item.id}
-                                    variant="contained"
-                                    color={item.id % 2 === 0 ? 'secondary' : 'primary'}
-                                    onClick={handleModalExperience}
-                                    sx={button.buttonWhiteTextFooter}
-
-                                >
-                                    Experiencia
-                                </Button>
-                            </Box>
-
-                        </Box>
                         <Modal
                             open={isModalExperience}
                             onClose={handleCloseModal}
@@ -143,7 +124,7 @@ const WhoComponent = ({ data }) => {
                                 },
                             }}>
                                 <Box sx={{ borderRadius: '10px 10px 0 0', backgroundColor: theme.palette.primary.main, height: '50px', width: '100%' }} />
-                                <Box sx={{ maxHeight: '400px', height:'auto', p: '2rem 1rem 2rem 2rem', }}>
+                                <Box sx={{ maxHeight: '400px', height: 'auto', p: '2rem 1rem 2rem 2rem', }}>
 
                                     <Box sx={{ display: 'flex', justifyContent: 'flex-start', flexDirection: 'column', marginBottom: '2rem' }}>
                                         <Typography sx={text.textH4} >Experiencia Profesional</Typography>
@@ -180,18 +161,18 @@ const WhoComponent = ({ data }) => {
                                         <Grid xs={7} sm={7}>
                                             <List>
                                                 <ListItem>
-                                                    <ListItemIcon sx={{  display: { xs: 'none' , sm:'block'}}}>
-                                                        <FiberManualRecord fontSize="extrasmall" sx={{ color: theme.palette.primary.main}}  />
+                                                    <ListItemIcon sx={{ display: { xs: 'none', sm: 'block' } }}>
+                                                        <FiberManualRecord fontSize="extrasmall" sx={{ color: theme.palette.primary.main }} />
                                                     </ListItemIcon>
                                                     <Typography sx={text.textH7} >{item.list1}</Typography>
                                                 </ListItem>
                                                 <ListItem>
-                                                    <ListItemIcon sx={{  display: { xs: 'none' , sm:'block'}}}>
+                                                    <ListItemIcon sx={{ display: { xs: 'none', sm: 'block' } }}>
                                                         <FiberManualRecord fontSize="extrasmall" sx={{ color: theme.palette.primary.main }} />
                                                     </ListItemIcon>
                                                     <Typography sx={text.textH7} >{item.list3}</Typography>
                                                 </ListItem>
-                                                
+
 
                                             </List>
                                         </Grid>
@@ -199,20 +180,20 @@ const WhoComponent = ({ data }) => {
 
                                     <List>
                                         <ListItem>
-                                            <ListItemIcon sx={{  display: { xs: 'none', sm:'block' }}}>
-                                                <FiberManualRecord  fontSize="extrasmall" sx={{  color: theme.palette.primary.main }} />
+                                            <ListItemIcon sx={{ display: { xs: 'none', sm: 'block' } }}>
+                                                <FiberManualRecord fontSize="extrasmall" sx={{ color: theme.palette.primary.main }} />
                                             </ListItemIcon>
                                             <Typography sx={text.textH7} >{item.list3}</Typography>
                                         </ListItem>
                                         <ListItem>
-                                            <ListItemIcon sx={{  display: { xs: 'none', sm:'block' }}}>
-                                                <FiberManualRecord fontSize="extrasmall" sx={{  color: theme.palette.primary.main }} />
+                                            <ListItemIcon sx={{ display: { xs: 'none', sm: 'block' } }}>
+                                                <FiberManualRecord fontSize="extrasmall" sx={{ color: theme.palette.primary.main }} />
                                             </ListItemIcon>
                                             <Typography sx={text.textH7} >{item.list4}</Typography>
                                         </ListItem>
-                                        <ListItem sx={{  display: { xs: 'none', sm:'flex' }}}>
+                                        <ListItem sx={{ display: { xs: 'none', sm: 'flex' } }}>
                                             <ListItemIcon >
-                                                <FiberManualRecord fontSize="extrasmall" sx={{  color: theme.palette.primary.main }} />
+                                                <FiberManualRecord fontSize="extrasmall" sx={{ color: theme.palette.primary.main }} />
                                             </ListItemIcon>
                                             <Typography sx={text.textH7} >{item.list5}</Typography>
                                         </ListItem>
@@ -222,7 +203,9 @@ const WhoComponent = ({ data }) => {
                             </Box>
                         </Modal >
 
-                    </Paper>
+                    </Box>
+
+
 
                 ))}
 
